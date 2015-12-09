@@ -73,6 +73,7 @@ tree
 typesafe-activator
 unixodbc
 unrar
+vim
 wget
 z
 zsh
