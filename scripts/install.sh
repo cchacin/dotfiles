@@ -27,8 +27,8 @@ git submodule update &> /dev/null
 # if homebrew exists install all the formulas in homebrew.txt
 if [] then
 echo "Installing homebrew formulas"
-cat homebrew.txt | xargs brew install
-cat homebrew-casks.txt | xargs brew cask install
+cat brew.txt | xargs brew install
+cat brewcasks.txt | xargs brew cask install
 fi
 
 
