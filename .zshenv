@@ -19,3 +19,6 @@ eval "$(jenv init -)"
 
 # Octopress
 alias rake="noglob rake"
+
+# Docker
+eval "$(docker-machine env default)"

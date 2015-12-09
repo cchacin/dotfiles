@@ -35,7 +35,6 @@ macdown
 mou
 mysqlworkbench
 netbeans
-openoffice
 osxfuse
 pgadmin3
 rdm
