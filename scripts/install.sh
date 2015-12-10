@@ -11,25 +11,34 @@ echo ""
 
 echo "==> Starting..."
 cd ~
-# if repo doesn't exists then clone
-echo "==> Cloning dotfiles..."
-git clone https://github.com/cchacin/dotfiles.git
 
-# else fetch & pull
-echo "==> Fetching  and Pulling latest dotfiles..."
-git fetch &> /dev/null
-git pull &> /dev/null
-
-echo "  > Updating all git submodules..."
-git submodule init &> /dev/null
-git submodule update &> /dev/null
-
-# if homebrew exists install all the formulas in homebrew.txt
-if [] then
-echo "Installing homebrew formulas"
-cat brew.txt | xargs brew install
-cat brewcasks.txt | xargs brew cask install
+if [ -d dotfiles ]; then
+  echo "==> Fetching  and Pulling latest dotfiles..."
+  cd ~/dotfiles && git fetch > /dev/null && git pull > /dev/null
+else
+  echo "==> Cloning dotfiles..."
+  git clone https://github.com/cchacin/dotfiles.git
+  echo "==> Updating all git submodules..."
+  cd ~/dotfiles && git submodule update --init --recursive > /dev/null
 fi
 
+
+# if homebrew exists install all the formulas in homebrew.txt
+if which brew > /dev/null; then
+  echo "==> brew already installed..."
+else
+  echo "==> Installing homebrew"
+  if which ruby > /dev/null; then
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  else
+    echo "==> skipping brew installation ruby is not installed in your system"
+  fi
+fi
+
+if which brew > /dev/null; then
+  echo "==> Installing homebrew formulas"
+  cat brew.txt | xargs brew install
+  cat brewcask.txt | xargs brew cask install
+fi
 
 echo "==> Done."
