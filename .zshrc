@@ -45,7 +45,7 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(atom autojump brew brew-cask bundler capistrano colored-man-pages composer docker docker-compose gem git git-extras git-flow gitignore gpg-agent gradle heroku httpie mvn node npm rbenv redis-cli ruby sbt scala ssh-agent sublime sudo svn symfony2 vagrant z zsh_reload zsh-syntax-highlighting)
+plugins=(atom autojump brew brew-cask bundler capistrano colored-man-pages common-aliases composer docker docker-compose gem git git-extras git-flow gitignore gpg-agent gradle heroku history httpie mvn node npm rbenv redis-cli ruby sbt scala ssh-agent sublime sudo svn symfony2 vagrant z zsh_reload zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
