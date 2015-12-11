@@ -8,6 +8,7 @@ calibre
 clipmenu
 dash
 diffmerge
+docker
 docker-compose
 docker-machine
 eclipse-java
@@ -18,7 +19,6 @@ fish
 flux
 fuze
 geektool
-genymotion
 gitbook
 github (!)
 google-chrome

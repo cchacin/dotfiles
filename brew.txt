@@ -17,6 +17,7 @@ findutils
 fortune
 gawk
 gist
+git
 git-extras
 git-flow-avh
 gnu-tar
@@ -36,7 +37,6 @@ jboss-forge
 jenv
 jmeter
 jq
-groupon/cchacin/jtier
 libidn
 libxml2
 lzlib
@@ -51,6 +51,7 @@ node
 homebrew/fuse/ntfs-3g
 ondir
 ossp-uuid
+pandoc
 pgbouncer
 phantomjs
 pmd
