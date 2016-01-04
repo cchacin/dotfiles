@@ -23,6 +23,7 @@ gitbook
 github (!)
 google-chrome
 google-hangouts
+google-photos-backup
 hipchat
 intellij-idea
 iterm2
