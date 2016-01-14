@@ -10,7 +10,7 @@ dash
 diffmerge
 docker
 docker-compose
-docker-machine
+docker-machine (!)
 eclipse-java
 evernote
 filezilla
@@ -33,12 +33,12 @@ joinme
 libreoffice
 licecap
 macdown
+medis
 mou
 mysqlworkbench
 netbeans
 osxfuse
 pgadmin3
-rdm
 rowanj-gitx
 screenflow
 sequel-pro
