@@ -5,6 +5,7 @@ balsamiq-mockups
 bluej
 caffeine
 calibre
+charles
 clipmenu
 dash
 diffmerge
@@ -17,7 +18,7 @@ filezilla
 firefox
 fish
 flux
-fuze
+fuze (!)
 geektool
 gitbook
 github (!)
@@ -34,6 +35,7 @@ libreoffice
 licecap
 macdown
 medis
+minecraft
 mou
 mysqlworkbench
 netbeans
@@ -41,6 +43,7 @@ osxfuse
 pgadmin3
 rowanj-gitx
 screenflow
+screenhero
 sequel-pro
 skitch
 skype
@@ -55,6 +58,8 @@ utorrent
 virtualbox
 visualvm
 vlc
+xamarin-mdk
+xamarin-studio
 xquartz
 ynab
 yourkit-java-profiler

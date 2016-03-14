@@ -5,6 +5,7 @@ autojump
 autossh
 axel
 bash-completion
+boost
 ccze
 checkstyle
 cloc
@@ -17,14 +18,16 @@ fabric
 findutils
 fortune
 gawk
+gcviewer
 gist
 git-extras
 git-flow-avh
+gnu-sed
 gnu-tar
 gnupg
 gnupg2
-gradle
 graphviz
+groovy
 heroku-toolbelt
 hornetq
 htop-osx
@@ -38,8 +41,10 @@ jenv
 jmeter
 jq
 groupon/engineering/jtier
+kafka
 libidn
-libxml2
+libxslt
+libyaml
 lzlib
 maven-shell
 groupon/engineering/mdnsp
@@ -55,7 +60,6 @@ ossp-uuid
 pgbouncer
 phantomjs
 pmd
-postgresql
 pygtksourceview
 pyqt
 python
@@ -65,8 +69,8 @@ rbenv
 reattach-to-user-namespace
 redis
 rename
-ruby
 terminal-notifier
+groupon/engineering/tmpg
 tmux
 todo-txt
 tree
@@ -75,6 +79,7 @@ unixodbc
 unrar
 vim
 wget
+xml2
 z
 zsh
 zsh-syntax-highlighting

@@ -8,17 +8,3 @@ if which docker-machine > /dev/null; then
     echo "Docker already running..."
   fi
 fi
-
-# RVM
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# Travis
-[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
-
-# Jenv
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-
-# Octopress
-alias rake="noglob rake"

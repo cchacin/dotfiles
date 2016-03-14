@@ -69,6 +69,9 @@ export PATH="/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/bin"
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+#JAVA_HOME
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
+
 #ALIAS for GIT
 alias gitlog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gfm="git fetch; git merge origin/master"
@@ -99,3 +102,19 @@ export LC_CTYPE=en_US.UTF-8
 
 # Maven
 export M2_HOME=/usr/local/Cellar/maven/3.3.9/libexec
+
+#rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+#autojump
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+# Jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+# Octopress
+alias rake="noglob rake"
+
+# Travis
+[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
