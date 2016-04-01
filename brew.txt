@@ -61,6 +61,7 @@ ossp-uuid
 pgbouncer
 phantomjs
 pmd
+protobuf
 pygtksourceview
 pyqt
 python
