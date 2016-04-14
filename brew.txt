@@ -13,6 +13,7 @@ coreutils
 cscope
 curl
 groupon/engineering/dmdns
+docker-compose
 emacs
 fabric
 findutils
@@ -45,7 +46,6 @@ groupon/engineering/jtier
 kafka
 libidn
 libxslt
-libyaml
 lzlib
 maven-shell
 groupon/engineering/mdnsp

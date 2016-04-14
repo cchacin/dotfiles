@@ -54,7 +54,7 @@ spotify
 sublime-text
 the-unarchiver
 torbrowser
-trello-x
+trello-x (!)
 utorrent
 virtualbox
 visualvm
