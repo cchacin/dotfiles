@@ -4,7 +4,6 @@ android-studio
 atom
 balsamiq-mockups
 bluej
-caffeine
 calibre
 charles
 clipmenu
@@ -32,6 +31,7 @@ iterm2
 jabber-video
 java
 joinme
+keepingyouawake
 libreoffice
 licecap
 macdown
@@ -53,6 +53,7 @@ spectacle
 spotify
 sublime-text
 the-unarchiver
+toad
 torbrowser
 trello-x (!)
 utorrent
