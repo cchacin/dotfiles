@@ -1,0 +1,13 @@
+enter ~/Git/groupon/([^/]+)
+  if [ -r .git ]; then
+    git config user.name "Carlos Chacin";
+    git config user.email "$USER@groupon.com";
+    echo 'Switched to git user/email settings for $USER@groupon.com - GROUPON.';
+  fi
+
+enter ~/Git/([^/]+)
+  if [ -r .git ]; then
+    git config user.name "Carlos Chacin";
+    git config user.email "$USER@gmail.com";
+    echo 'Switched to git user/email settings for $USER@gmail.com - PERSONAL.';
+  fi
