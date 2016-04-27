@@ -32,6 +32,7 @@ jabber-video
 java
 joinme
 keepingyouawake
+kindle
 libreoffice
 licecap
 macdown
@@ -42,6 +43,7 @@ mysqlworkbench
 netbeans
 osxfuse
 pgadmin3
+pomotodo
 rowanj-gitx
 screenflow
 screenhero
