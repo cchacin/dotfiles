@@ -5,6 +5,7 @@ autojump
 autossh
 axel
 bash-completion
+bison
 boost
 ccze
 checkstyle
@@ -24,6 +25,7 @@ gist
 git-extras
 git-flow-avh
 git-fresh
+git-standup
 gnu-sed
 gnu-tar
 gnupg
