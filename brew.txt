@@ -32,7 +32,7 @@ gnupg
 gnupg2
 graphviz
 groovy
-heroku-toolbelt
+heroku
 hornetq
 htop-osx
 httpie
