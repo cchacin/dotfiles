@@ -30,6 +30,7 @@ gnu-sed
 gnu-tar
 gnupg
 gnupg2
+gradle
 graphviz
 groovy
 heroku
@@ -45,7 +46,6 @@ jenv
 jmeter
 jq
 groupon/engineering/jtier
-kafka
 libidn
 libxslt
 lzlib
