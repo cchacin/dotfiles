@@ -11,7 +11,6 @@ dash
 diffmerge
 docker
 docker-compose
-docker-machine (!)
 eclipse-java
 evernote
 filezilla
