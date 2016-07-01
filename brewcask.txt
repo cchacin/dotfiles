@@ -12,7 +12,6 @@ diffmerge
 docker
 docker-compose
 eclipse-java
-evernote
 filezilla
 firefox
 fish
@@ -39,6 +38,7 @@ minecraft
 mou
 mysqlworkbench
 netbeans
+nimbus
 osxfuse
 pgadmin3
 pomotodo
@@ -62,5 +62,6 @@ vlc
 xamarin-mdk
 xamarin-studio
 xquartz
+yed
 ynab
 yourkit-java-profiler
