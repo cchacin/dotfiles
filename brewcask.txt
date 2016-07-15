@@ -8,6 +8,7 @@ calibre
 charles
 clipmenu
 dash
+datagrip
 diffmerge
 docker
 docker-compose
@@ -22,6 +23,7 @@ github-desktop
 google-chrome
 google-hangouts
 google-photos-backup
+grammarly
 hipchat
 intellij-idea
 iterm2

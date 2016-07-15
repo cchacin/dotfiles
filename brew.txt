@@ -14,8 +14,6 @@ coreutils
 cscope
 curl
 groupon/engineering/dmdns
-docker-clean
-docker-compose
 emacs
 fabric
 findutils
