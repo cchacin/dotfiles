@@ -67,12 +67,10 @@ pmd
 protobuf
 pygtksourceview
 pyqt
-python
 python3
 rarian
 rbenv
 reattach-to-user-namespace
-redis
 rename
 ruby
 shellcheck
@@ -88,6 +86,7 @@ unrar
 vim
 wget
 xml2
+youtube-dl
 z
 zsh
 zsh-syntax-highlighting
