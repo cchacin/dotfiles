@@ -111,7 +111,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Jenv
 export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
 # Octopress
 alias rake="noglob rake"
