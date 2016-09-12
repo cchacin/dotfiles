@@ -29,7 +29,6 @@ iterm2
 jabber-video (!)
 java
 joinme
-keepingyouawake
 kindle
 libreoffice
 licecap
@@ -57,8 +56,10 @@ the-unarchiver
 toad
 torbrowser
 utorrent
+vagrant
 virtualbox
 visualvm
+vivaldi
 vlc
 xamarin-mdk
 xamarin-studio

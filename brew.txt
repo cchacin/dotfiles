@@ -71,6 +71,7 @@ python3
 rarian
 rbenv
 reattach-to-user-namespace
+redis
 rename
 ruby
 shellcheck
