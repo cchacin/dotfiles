@@ -1,22 +1,16 @@
-adium
 android-file-transfer
 android-studio
 atom
-balsamiq-mockups
 bluej
 calibre
 charles
 clipmenu
-dash
-datagrip
 diffmerge
 docker
 eclipse-java
-filezilla
+evernote
 firefox
-fish
 flux
-geektool
 gitbook
 github-desktop
 google-chrome
@@ -24,7 +18,6 @@ google-hangouts
 google-photos-backup
 grammarly
 hipchat
-intellij-idea
 iterm2
 jabber-video (!)
 java
@@ -32,16 +25,11 @@ joinme
 kindle
 libreoffice
 licecap
-macdown
 medis
-minecraft
-mou
-mysqlworkbench
 netbeans
 nimbus
 osxfuse
-pgadmin3
-pomotodo
+pgadmin3 (!)
 rowanj-gitx
 screenflow
 screenhero
@@ -53,17 +41,12 @@ spectacle
 spotify
 sublime-text
 the-unarchiver
-toad
 torbrowser
 utorrent
 vagrant
 virtualbox
 visualvm
-vivaldi
 vlc
-xamarin-mdk
-xamarin-studio
 xquartz
-yed
 ynab
 yourkit-java-profiler

@@ -14,6 +14,7 @@ coreutils
 cscope
 curl
 groupon/engineering/dmdns
+docker
 emacs
 fabric
 findutils
@@ -45,6 +46,7 @@ jboss-forge
 jenv
 jmeter
 jq
+jsonpp
 groupon/engineering/jtier
 libidn
 libxslt
@@ -53,6 +55,7 @@ maven-shell
 groupon/engineering/mdnsp
 mhash
 multitail
+mvnvm
 mycli
 mysql
 homebrew/dupes/nano
@@ -86,6 +89,7 @@ unixodbc
 unrar
 vim
 wget
+wrk
 xml2
 youtube-dl
 z
