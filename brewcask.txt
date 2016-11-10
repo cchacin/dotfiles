@@ -36,6 +36,7 @@ screenhero
 sequel-pro
 skitch
 skype
+slack
 sourcetree
 spectacle
 spotify
