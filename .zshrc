@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="bullet-train"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -118,3 +118,13 @@ alias rake="noglob rake"
 
 # Travis
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
+
+# ZSH Completions
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+# ZSH Auto suggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
