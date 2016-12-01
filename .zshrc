@@ -82,16 +82,16 @@ alias showFiles="defaults write com.apple.finder AppleShowAllFiles YES;killall F
 alias hideFiles="defaults write com.apple.finder AppleShowAllFiles NO;killall Finder /System/Library/CoreServices/Finder.app"
 
 # ondir configuration
-cd() {
-  builtin cd "$@" && eval "`ondir \"$OLDPWD\" \"$PWD\"`"
-}
-pushd() {
-  builtin pushd "$@" && eval "`ondir \"$OLDPWD\" \"$PWD\"`"
-}
-popd() {
-  builtin popd "$@" && eval "`ondir \"$OLDPWD\" \"$PWD\"`"
-}
-eval "`ondir /`"
+# cd() {
+#   builtin cd "$@" && eval "`ondir \"$OLDPWD\" \"$PWD\"`"
+# }
+# pushd() {
+#   builtin pushd "$@" && eval "`ondir \"$OLDPWD\" \"$PWD\"`"
+# }
+# popd() {
+#   builtin popd "$@" && eval "`ondir \"$OLDPWD\" \"$PWD\"`"
+# }
+# eval "`ondir /`"
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
