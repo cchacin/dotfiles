@@ -5,6 +5,7 @@ bluej
 calibre
 charles
 clipmenu
+colloquy
 diffmerge
 docker
 eclipse-java
@@ -12,18 +13,24 @@ evernote
 firefox
 flux
 github-desktop
+gitup
 google-chrome
 google-hangouts
 google-photos-backup
 grammarly
+haskell-platform
 hipchat
+intellij-idea
 iterm2
 jabber-video (!)
 java
+keybase
 kindle
 libreoffice
 licecap
+mono-mdk
 netbeans
+openemu
 osxfuse
 pgadmin4
 rowanj-gitx
@@ -37,9 +44,12 @@ sourcetree
 spectacle
 spotify
 the-unarchiver
+toggldesktop
 utorrent
 vagrant
 virtualbox
 visualvm
 vlc
+xamarin
+xamarin-studio
 xquartz
