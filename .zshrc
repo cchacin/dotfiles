@@ -1,7 +1,11 @@
 # Brew
 export PATH="/usr/local/sbin:$PATH"
 
+# Default user
 BULLETTRAIN_CONTEXT_DEFAULT_USER=cchacin
+
+# SSH
+export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 #ALIAS for GIT
 alias gitlog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
