@@ -37,7 +37,6 @@ else
     # Bundles from the default repo (robbyrussell's oh-my-zsh).
     antigen bundle ssh-agent
     antigen bundle autojump
-    antigen bundle brew
     antigen bundle brew-cask
     antigen bundle bundler
     antigen bundle capistrano

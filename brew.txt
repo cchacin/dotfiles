@@ -13,6 +13,7 @@ cloc
 coreutils
 cscope
 curl
+diff-so-fancy
 groupon/engineering/dmdns
 docker
 emacs
@@ -60,7 +61,6 @@ multitail
 mycli
 mysql
 homebrew/dupes/nano
-node
 homebrew/fuse/ntfs-3g
 ondir
 ossp-uuid

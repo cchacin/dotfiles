@@ -1,5 +1,4 @@
 android-file-transfer
-android-studio
 atom
 bluej
 calibre
@@ -8,11 +7,9 @@ clipmenu
 colloquy
 diffmerge
 docker
-eclipse-java
 evernote
 firefox
 flux
-github-desktop
 gitup
 google-chrome
 google-hangouts
@@ -22,13 +19,13 @@ haskell-platform
 hipchat
 intellij-idea
 iterm2
-jabber-video (!)
+jabber-video
 java
 keybase
 kindle
 libreoffice
 licecap
-mono-mdk
+marp
 netbeans
 openemu
 osxfuse
@@ -40,16 +37,11 @@ sequel-pro
 skitch
 skype
 slack
-sourcetree
 spectacle
 spotify
 the-unarchiver
 toggldesktop
 utorrent
-vagrant
 virtualbox
-visualvm
 vlc
-xamarin
-xamarin-studio
 xquartz
