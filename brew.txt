@@ -17,6 +17,7 @@ diff-so-fancy
 groupon/engineering/dmdns
 docker
 emacs
+erlang
 fabric
 findutils
 fortune
@@ -48,7 +49,6 @@ jmeter
 jq
 jsonpp
 groupon/engineering/jtier
-keybase
 leiningen
 libidn
 libxslt

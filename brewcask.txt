@@ -19,7 +19,7 @@ haskell-platform
 hipchat
 intellij-idea
 iterm2
-jabber-video
+jabber-video (!)
 java
 keybase
 kindle
@@ -41,7 +41,7 @@ spectacle
 spotify
 the-unarchiver
 toggldesktop
-utorrent
+utorrent (!)
 virtualbox
 vlc
 xquartz

@@ -53,6 +53,7 @@ else
     antigen bundle ssh-agent
     antigen bundle gpg-agent
     antigen bundle autojump
+    antigen bundle brew
     antigen bundle brew-cask
     antigen bundle bundler
     antigen bundle capistrano
