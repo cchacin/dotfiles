@@ -67,12 +67,14 @@ ossp-uuid
 p7zip
 perl
 pgbouncer
+pgcli
 phantomjs
 plantuml
 pmd
 protobuf
 pygtksourceview
 homebrew/boneyard/pyqt
+python
 python3
 rarian
 rbenv
@@ -81,6 +83,7 @@ redis
 rename
 ruby
 atomist/tap/rug-cli
+saxon
 shellcheck
 swagger-codegen
 terminal-notifier

@@ -15,6 +15,7 @@ google-chrome
 google-hangouts
 google-photos-backup
 grammarly
+graphiql
 haskell-platform
 hipchat
 intellij-idea
@@ -45,3 +46,4 @@ utorrent (!)
 virtualbox
 vlc
 xquartz
+yed
