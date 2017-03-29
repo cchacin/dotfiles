@@ -8,8 +8,8 @@ bash-completion
 bison
 boost
 ccze
-checkstyle
 cloc
+groupon/engineering/conveyor-cli
 coreutils
 cscope
 curl
@@ -70,11 +70,9 @@ pgbouncer
 pgcli
 phantomjs
 plantuml
-pmd
 protobuf
 pygtksourceview
 homebrew/boneyard/pyqt
-python
 python3
 rarian
 rbenv
@@ -96,7 +94,6 @@ typesafe-activator
 unixodbc
 unrar
 utf8proc
-vim
 wget
 wrk
 xml2

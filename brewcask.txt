@@ -3,10 +3,10 @@ atom
 bluej
 calibre
 charles
-clipmenu
 colloquy
 diffmerge
 docker
+eclipse-java
 evernote
 firefox
 flux
@@ -14,6 +14,7 @@ gitup
 google-chrome
 google-hangouts
 google-photos-backup
+gpgtools
 grammarly
 graphiql
 haskell-platform
@@ -42,7 +43,6 @@ spectacle
 spotify
 the-unarchiver
 toggldesktop
-utorrent (!)
 virtualbox
 vlc
 xquartz
