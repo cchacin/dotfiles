@@ -1,3 +1,4 @@
+adium
 android-file-transfer
 atom
 bluej
@@ -12,8 +13,6 @@ firefox
 flux
 gitup
 google-chrome
-google-hangouts
-google-photos-backup
 gpgtools
 grammarly
 graphiql
@@ -21,7 +20,7 @@ haskell-platform
 hipchat
 intellij-idea
 iterm2
-jabber-video (!)
+jabber-video
 java
 keybase
 kindle
@@ -30,8 +29,10 @@ licecap
 marp
 netbeans
 openemu
+opera
 osxfuse
 pgadmin4
+postman
 rowanj-gitx
 screenflow
 screenhero

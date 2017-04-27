@@ -1,6 +1,10 @@
 # Brew
 export PATH="/usr/local/bin:/usr/local/sbin:/bin:/usr/sbin:/sbin:/usr/bin:$PATH"
 # export PATH="/usr/local/sbin:$PATH"
+
+# Brew curl
+export PATH="/usr/local/opt/curl/bin:$PATH"
+
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
@@ -10,6 +14,42 @@ export TERM="xterm-256color"
 # Default user
 DEFAULT_USER=cchacin
 BULLETTRAIN_CONTEXT_DEFAULT_USER=cchacin
+
+# # JENV
+if [ ! -n "${BULLETTRAIN_JENV_BG+1}" ]; then
+  BULLETTRAIN_JENV_BG=black
+fi
+if [ ! -n "${BULLETTRAIN_JENV_FG+1}" ]; then
+  BULLETTRAIN_JENV_FG=white
+fi
+if [ ! -n "${BULLETTRAIN_JENV_PREFIX+1}" ]; then
+  BULLETTRAIN_JENV_PREFIX="\u2615 "
+fi
+
+# JENV: Java version manager
+prompt_jenv() {
+  local jenv_prompt
+  if $(jenv >/dev/null 2>&1); then
+    jenv_prompt="$(jenv version-name)"
+    prompt_segment $BULLETTRAIN_JENV_BG $BULLETTRAIN_JENV_FG $BULLETTRAIN_JENV_PREFIX$jenv_prompt
+  fi
+}
+  BULLETTRAIN_PROMPT_ORDER=(
+    time
+    status
+    custom
+    context
+    dir
+    perl
+    ruby
+    virtualenv
+    jenv
+    go
+    elixir
+    git
+    hg
+    cmd_exec_time
+  )
 
 # SSH
 export SSH_KEY_PATH="$HOME/.ssh"
