@@ -28,7 +28,6 @@ gcviewer
 gist
 git-extras
 git-fresh
-git-standup
 gnome-icon-theme
 gnu-getopt
 gnu-tar
@@ -61,6 +60,7 @@ libxslt
 lzlib
 maven-shell
 groupon/engineering/mdnsp
+memcached
 mhash
 mono
 multitail

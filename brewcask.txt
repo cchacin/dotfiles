@@ -4,7 +4,6 @@ atom
 bluej
 calibre
 charles
-colloquy
 diffmerge
 docker
 eclipse-java
@@ -20,8 +19,8 @@ haskell-platform
 hipchat
 intellij-idea
 iterm2
-jabber-video
 java
+kdiff3
 keybase
 kindle
 libreoffice
