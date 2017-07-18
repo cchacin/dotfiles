@@ -28,11 +28,13 @@ gcviewer
 gist
 git-extras
 git-fresh
+git-lfs
 gnome-icon-theme
 gnu-getopt
 gnu-tar
 gnutls
 simon-engledew/gocmdpev/gocmdpev
+googler
 gpg-agent
 gradle
 groovy
