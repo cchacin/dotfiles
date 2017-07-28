@@ -1,7 +1,6 @@
 homebrew/apache/ab
 adns
 ant
-apple-gcc42
 autojump
 autossh
 axel
@@ -10,20 +9,19 @@ bison
 boost
 ccze
 cloc
-groupon/engineering/conveyor-cli
 coreutils
 cscope
 curl
 diff-so-fancy
 dirmngr
 djvulibre
-groupon/engineering/dmdns
 docker
 erlang
 fabric
 findutils
 fortune
 gawk
+gcc
 gcviewer
 gist
 git-extras
@@ -51,7 +49,6 @@ jenv
 jmeter
 jq
 jsonpp
-groupon/engineering/jtier
 jvm-mon
 leiningen
 libidn
