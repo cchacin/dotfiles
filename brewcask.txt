@@ -3,11 +3,12 @@ android-file-transfer
 atom
 bluej
 calibre
+clipy
 diffmerge
 docker
 eclipse-java
 evernote
-firefox
+firefox-beta
 flux
 font-fira-mono-for-powerline
 font-meslo-for-powerline
@@ -47,3 +48,4 @@ virtualbox
 vlc
 xamarin
 xquartz
+zoomus
