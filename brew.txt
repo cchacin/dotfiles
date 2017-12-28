@@ -31,6 +31,7 @@ git-fresh
 git-lfs
 gnu-getopt
 gnu-tar
+go
 simon-engledew/gocmdpev/gocmdpev
 googler
 gperftools
@@ -38,7 +39,7 @@ gpg-agent
 gradle
 groovy
 hornetq
-htop-osx
+htop
 httpie
 hub
 hubflow
@@ -62,6 +63,7 @@ maven-shell
 mdnsp
 memcached
 mhash
+moc
 mono
 multitail
 mycli
@@ -70,6 +72,7 @@ npth
 ntfs-3g
 ondir
 ossp-uuid
+oysttyer
 p7zip
 perl
 phantomjs
@@ -79,11 +82,10 @@ poppler
 protobuf
 pygtksourceview
 pyqt
-python
-python3
 rarian
 rbenv
 reattach-to-user-namespace
+redis
 rename
 ruby
 atomist/tap/rug-cli
