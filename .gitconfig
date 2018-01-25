@@ -4,10 +4,13 @@
 	smudge = git media smudge %f
 [core]
 	fileMode = false
-	excludesfile = /Users/cchacin/.gitignore_global
+	ignorecase = false
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [user]
 	name = Carlos Chacin
 	email = cchacin@gmail.com
+	useconfigonly = true
+	signingkey = 29B96C5B
 [merge]
 	tool = diffmerge
 [diff]
@@ -25,9 +28,32 @@
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.5.2/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Users/cchacin/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [filter "lfs"]
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg2
+
+[includeIf "gitdir:~/Git/groupon/"]
+  path = .gitconfig-groupon
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 227
+	frag = magenta bold
+	commit = 227 bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[rerere]
+	enabled = true

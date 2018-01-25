@@ -1,4 +1,3 @@
-ab
 adns
 adwaita-icon-theme
 ant
@@ -17,7 +16,6 @@ curl
 diff-so-fancy
 dirmngr
 djvulibre
-docker
 erlang
 fabric
 findutils
@@ -26,6 +24,7 @@ gawk
 gcc
 gcviewer
 gist
+git
 git-extras
 git-fresh
 git-lfs
@@ -45,12 +44,10 @@ hub
 hubflow
 imap-uw
 javarepl
-jboss-forge
 jenv
 jmeter
 jq
 jsonpp
-jtier
 jvm-mon
 leiningen
 libidn
@@ -59,9 +56,11 @@ libspectre
 libusb-compat
 libxslt
 lzlib
+maven
 maven-shell
-mdnsp
+groupon/engineering/mdnsp
 memcached
+mercurial
 mhash
 moc
 mono
@@ -74,11 +73,13 @@ ondir
 ossp-uuid
 oysttyer
 p7zip
+pandoc
 perl
 phantomjs
 pianobar
 plantuml
 poppler
+postgresql
 protobuf
 pygtksourceview
 pyqt
@@ -90,12 +91,10 @@ rename
 ruby
 atomist/tap/rug-cli
 saxon
-shared-mime-info
 shellcheck
 swagger-codegen
 terminal-notifier
 tidy-html5
-tmpg
 tmux
 todo-txt
 tree

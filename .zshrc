@@ -126,3 +126,5 @@ else
     # Tell antigen that you're done.
     antigen apply
 fi
+
+# export JAVA_HOME=$(jenv javahome)
