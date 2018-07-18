@@ -127,4 +127,5 @@ else
     antigen apply
 fi
 
-# export JAVA_HOME=$(jenv javahome)
+export JAVA_HOME=$(jenv javahome)
+# export JAVA_HOME="`/usr/libexec/java_home -v '1.8*'`"
