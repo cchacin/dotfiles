@@ -1,5 +1,6 @@
 # Brew
 export PATH="/usr/local/bin:/usr/local/sbin:/bin:/usr/sbin:/sbin:/usr/bin:$PATH"
+export PATH="$PATH:/Users/cchacin/istio-1.0.0/bin"
 # export PATH="/usr/local/sbin:$PATH"
 
 # Brew curl
@@ -65,6 +66,9 @@ alias hideFiles="defaults write com.apple.finder AppleShowAllFiles NO;killall Fi
 
 #Alias for maven
 alias mver="mvn versions:display-dependency-updates versions:display-plugin-updates | grep 'INFO' | grep '>' | sort | uniq"
+
+#Alias for cat
+alias cat="bat --style=numbers,changes"
 
 # You will need to call compinit
 autoload -U compinstall
