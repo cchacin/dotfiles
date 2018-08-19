@@ -5,6 +5,7 @@ autojump
 autossh
 axel
 bash-completion
+bat
 bchunk
 bison
 ccze
@@ -49,6 +50,8 @@ jmeter
 jq
 jsonpp
 jvm-mon
+kubernetes-cli
+kubernetes-helm
 leiningen
 libidn
 libsecret
@@ -71,6 +74,7 @@ nghttp2
 npth
 ntfs-3g
 ondir
+openapi-generator
 openssl@1.1
 ossp-uuid
 oysttyer

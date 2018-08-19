@@ -8,12 +8,14 @@ calibre
 clipy
 diffmerge
 docker
+eclipse-java
 evernote
 firefox-beta
 flux
 font-fira-mono-for-powerline
 font-meslo-for-powerline
 font-roboto-mono-for-powerline
+gitkraken
 google-chrome
 grammarly
 hipchat
@@ -24,6 +26,7 @@ kdiff3
 keybase
 licecap
 marp
+minikube
 muzzle
 openemu
 osxfuse
@@ -40,6 +43,7 @@ spotify
 stride
 the-unarchiver
 unity-monodevelop
+virtualbox
 vlc
 xquartz
 zoomus
