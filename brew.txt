@@ -29,6 +29,7 @@ git-extras
 git-flow
 git-fresh
 git-lfs
+gitup
 gnu-getopt
 go
 gobject-introspection
@@ -70,7 +71,6 @@ mono
 multitail
 mycli
 nano
-nghttp2
 npth
 ntfs-3g
 ondir
@@ -81,10 +81,10 @@ oysttyer
 p7zip
 pandoc
 perl
-phantomjs
 pianobar
 plantuml
 poppler
+prettier
 protobuf
 pygtksourceview
 pyqt
