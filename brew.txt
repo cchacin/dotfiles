@@ -1,6 +1,8 @@
 adns
 adwaita-icon-theme
+ansible
 ant
+asciidoc
 autojump
 autossh
 axel

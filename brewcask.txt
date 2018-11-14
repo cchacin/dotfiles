@@ -1,5 +1,6 @@
 adium
 adobe-air
+adoptopenjdk
 android-file-transfer
 asciidocfx
 atom
@@ -28,6 +29,7 @@ licecap
 marp
 minikube
 muzzle
+netbeans
 openemu
 osxfuse
 postman
