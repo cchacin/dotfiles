@@ -10,7 +10,7 @@
 	name = Carlos Chacin
 	email = cchacin@gmail.com
 	useconfigonly = true
-	signingkey = 29B96C5B
+	signingkey = 24B5EC8D
 [merge]
 	tool = diffmerge
 [diff]
@@ -31,11 +31,12 @@
 	cmd = /Users/cchacin/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [filter "lfs"]
-	clean = git lfs clean %f
-	smudge = git lfs smudge %f
 	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
 [commit]
-	gpgsign = true
+	gpgSign = true
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg2
 
