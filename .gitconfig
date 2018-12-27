@@ -10,7 +10,7 @@
 	name = Carlos Chacin
 	email = cchacin@gmail.com
 	useconfigonly = true
-	signingkey = 24B5EC8D
+	signingKey = 163073B3A72E251B
 [merge]
 	tool = diffmerge
 [diff]
@@ -36,7 +36,7 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 [commit]
-	gpgSign = true
+	gpgsign = true
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg2
 

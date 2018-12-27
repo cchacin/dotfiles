@@ -1,2 +1,5 @@
 [user]
-    email = cchacin@groupon.com
+	name = Carlos Chacin
+	email = cchacin@groupon.com
+	useconfigonly = true
+	signingKey = 73516FCF24B5EC8D
