@@ -3,6 +3,7 @@ adwaita-icon-theme
 ansible
 ant
 asciidoc
+asciidoctor
 autojump
 autossh
 axel
@@ -12,6 +13,7 @@ bchunk
 bison
 ccze
 cloc
+cmake
 coreutils
 cscope
 curl
@@ -24,7 +26,6 @@ fabric
 findutils
 fortune
 gawk
-gcc
 gcviewer
 gist
 git
@@ -48,6 +49,7 @@ htop
 httpie
 hub
 hubflow
+hugo
 imap-uw
 javarepl
 jenv
@@ -70,11 +72,13 @@ groupon/engineering/mdnsp
 memcached
 mercurial
 mhash
+midnight-commander
 moc
 mono
 multitail
 mycli
 nano
+nghttp2
 npth
 ntfs-3g
 ondir
@@ -92,6 +96,7 @@ prettier
 protobuf
 pygtksourceview
 pyqt
+r
 rarian
 rbenv-gemset
 reattach-to-user-namespace
@@ -109,6 +114,7 @@ tidy-html5
 groupon/engineering/tmpg
 tmux
 todo-txt
+tor
 tree
 typesafe-activator
 unixodbc

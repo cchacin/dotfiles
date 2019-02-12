@@ -6,7 +6,9 @@ asciidocfx
 atom
 bluej
 calibre
+charles
 clipy
+datadog-agent
 diffmerge
 docker
 eclipse-java
@@ -20,6 +22,7 @@ gitkraken
 google-chrome
 grammarly
 hipchat
+inkscape
 intellij-idea
 iterm2
 java
@@ -30,11 +33,14 @@ marp
 minikube
 muzzle
 netbeans
+onenote-importer-preview
 openemu
 osxfuse
 postman
 psequel
+r-app
 rowanj-gitx
+rstudio
 screenflow
 sequel-pro
 skitch
@@ -44,6 +50,7 @@ spectacle
 spotify
 stride
 the-unarchiver
+tor-browser
 unity-monodevelop
 virtualbox
 vlc

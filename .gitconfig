@@ -26,7 +26,7 @@
 	required = true
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Users/cchacin/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -40,6 +40,8 @@
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg2
 
+[includeIf "gitdir:~/Git/groupon/jtier/"]
+  path = .gitconfig-groupon
 [includeIf "gitdir:~/Git/groupon/"]
   path = .gitconfig-groupon
 [color]
