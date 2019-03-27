@@ -115,6 +115,8 @@ else
     antigen bundle heroku
     antigen bundle history
     antigen bundle httpie
+    antigen bundle kubectl
+    antigen bundle minikube
     antigen bundle mvn
     antigen bundle rbenv
     antigen bundle redis-cli

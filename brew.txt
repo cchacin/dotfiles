@@ -12,17 +12,20 @@ bat
 bchunk
 bison
 ccze
+click
 cloc
 cmake
 coreutils
 cscope
 curl
+dialog
 diff-so-fancy
 dirmngr
 wagoodman/dive/dive
 djvulibre
 moul/moul/docker-diff
 fabric
+filebeat
 findutils
 fortune
 gawk
@@ -57,8 +60,10 @@ jmeter
 jq
 jsonpp
 jvm-mon
+kompose
 kubernetes-cli
 kubernetes-helm
+kustomize
 leiningen
 libidn
 libsecret
@@ -78,6 +83,7 @@ mono
 multitail
 mycli
 nano
+newt
 nghttp2
 npth
 ntfs-3g
@@ -127,6 +133,7 @@ wxmac
 xml2
 youtube-dl
 z
+zenity
 zsh
 zsh-autosuggestions
 zsh-completions

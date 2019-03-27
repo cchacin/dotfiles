@@ -2,8 +2,10 @@ adium
 adobe-air
 adoptopenjdk
 android-file-transfer
+android-studio
 asciidocfx
 atom
+bbedit
 bluej
 calibre
 charles
@@ -19,6 +21,7 @@ font-fira-mono-for-powerline
 font-meslo-for-powerline
 font-roboto-mono-for-powerline
 gitkraken
+gitter
 google-chrome
 grammarly
 hipchat
@@ -26,8 +29,10 @@ inkscape
 intellij-idea
 iterm2
 java
+jetbrains-toolbox
 kdiff3
 keybase
+kubernetic
 licecap
 marp
 minikube
@@ -49,6 +54,7 @@ slack
 spectacle
 spotify
 stride
+telegram
 the-unarchiver
 tor-browser
 unity-monodevelop
