@@ -5,12 +5,11 @@ android-file-transfer
 android-studio
 asciidocfx
 atom
-bbedit
 bluej
 calibre
 charles
 clipy
-datadog-agent
+dash
 diffmerge
 docker
 eclipse-java
@@ -20,11 +19,9 @@ flux
 font-fira-mono-for-powerline
 font-meslo-for-powerline
 font-roboto-mono-for-powerline
-gitkraken
 gitter
 google-chrome
 grammarly
-hipchat
 inkscape
 intellij-idea
 iterm2
@@ -38,7 +35,6 @@ marp
 minikube
 muzzle
 netbeans
-onenote-importer-preview
 openemu
 osxfuse
 postman
@@ -57,7 +53,6 @@ stride
 telegram
 the-unarchiver
 tor-browser
-unity-monodevelop
 virtualbox
 vlc
 xquartz
