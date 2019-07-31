@@ -6,6 +6,7 @@ android-studio
 asciidocfx
 atom
 bluej
+brave-browser
 calibre
 charles
 clipy
@@ -19,16 +20,20 @@ flux
 font-fira-mono-for-powerline
 font-meslo-for-powerline
 font-roboto-mono-for-powerline
+fork
 gitter
 google-chrome
 grammarly
+graphiql
 inkscape
+insomnia
 intellij-idea
 iterm2
 java
 jetbrains-toolbox
 kdiff3
 keybase
+kindlegen
 kubernetic
 licecap
 marp
@@ -37,6 +42,7 @@ muzzle
 netbeans
 openemu
 osxfuse
+podman
 postman
 psequel
 r-app
@@ -54,6 +60,7 @@ telegram
 the-unarchiver
 tor-browser
 virtualbox
+visualvm
 vlc
 xquartz
 zoomus

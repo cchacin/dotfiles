@@ -124,6 +124,7 @@ else
     antigen bundle sudo
     antigen bundle zsh_reload
     antigen bundle zsh-users/zsh-syntax-highlighting
+    antigen bundle tysonwolker/iterm-tab-colors
 
     # Load the theme.
     # antigen theme robbyrussell/oh-my-zsh themes/avit

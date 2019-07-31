@@ -1,5 +1,6 @@
 adns
 adwaita-icon-theme
+angular-cli
 ansible
 ant
 asciidoc
@@ -28,6 +29,7 @@ moul/moul/docker-diff
 fabric
 filebeat
 findutils
+fish
 fortune
 gawk
 gcviewer
@@ -62,8 +64,11 @@ jq
 jsonpp
 jvm-mon
 kompose
+kubectx
 kubernetes-helm
+kubespy
 kustomize
+jesseduffield/lazydocker/lazydocker
 leiningen
 libidn
 libsecret
@@ -78,6 +83,7 @@ memcached
 mercurial
 mhash
 midnight-commander
+mkdocs
 moc
 mono
 multitail
@@ -113,6 +119,7 @@ atomist/tap/rug-cli
 saxon
 shellcheck
 sphinx-doc
+stern
 swagger-codegen
 telnet
 terminal-notifier
