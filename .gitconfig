@@ -6,6 +6,7 @@
 	fileMode = false
 	ignorecase = false
 	pager = diff-so-fancy | less --tabs=4 -RFX
+	commitGraph = true
 [user]
 	name = Carlos Chacin
 	email = cchacin@gmail.com
@@ -62,3 +63,7 @@
 	enabled = true
 [pull]
 	rebase = true
+[gc]
+	writeCommitGraph = true
+[fetch]
+	writeCommitGraph = true

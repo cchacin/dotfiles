@@ -192,3 +192,4 @@ export TTC_BREAK=5
 
 # JavaFX 11
 export PATH_TO_FX=~/Downloads/javafx-sdk-11.0.2/lib
+alias python=/usr/local/bin/python3.7
