@@ -23,7 +23,7 @@ else
 fi
 
 
-# if homebrew exists install all the formulas in homebrew.txt
+# if homebrew exists install all the formulas
 if which brew > /dev/null; then
   echo "==> brew already installed..."
 else
