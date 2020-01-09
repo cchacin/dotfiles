@@ -37,8 +37,7 @@ fi
 
 if which brew > /dev/null; then
   echo "==> Installing homebrew formulas"
-  cat brew.txt | xargs brew install
-  cat brewcask.txt | xargs brew cask install
+  brew bundle
 fi
 
 echo "==> Done."
