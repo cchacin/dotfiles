@@ -1,0 +1,32 @@
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundles <<EOBUNDLES
+  ssh-agent
+  gpg-agent
+  autojump
+  brew
+  brew-cask
+  colored-man-pages
+  common-aliases
+  docker
+  docker-compose
+  git
+  git-extras
+  git-hubflow
+  git-remote-branch
+  gitignore
+  heroku
+  history
+  httpie
+  mvn
+  sudo
+  zsh-users/zsh-syntax-highlighting
+EOBUNDLES
+
+# Load the theme.
+antigen theme robbyrussell/oh-my-zsh themes/avit
+
+# Tell antigen that you're done.
+antigen apply
