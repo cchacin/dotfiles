@@ -19,23 +19,3 @@
         # zrecompile -pq $f
     done
 ) &!
-
-# If there is cache available
-if [[ -f ${ADOTDIR:-$HOME/.antigen}/.cache/.zcache-payload ]]; then
-  # Load bundles statically
-  source ${ADOTDIR:-$HOME/.antigen}/.cache/.zcache-payload
-
-  # You will need to call compinit
-  autoload -Uz compinstall compinit
-  if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
-    compinit -d ${HOME}/.zcompdump
-  fi
-  compinit -C
-  # autoload -Uz compinit
-  # compinit -d ${HOME}/.zcompdump
-else
-  # If there is no cache available do load and execute antigen
-  source $HOME/dotfiles/antigen/bin/antigen.zsh
-  antigen init $HOME/dotfiles/.antigenrc > /dev/null 2>&1
-  antigen cache-gen
-fi

@@ -67,3 +67,23 @@ alias cat="bat --style=numbers,changes"
 # JavaFX 11
 export PATH_TO_FX=~/Downloads/javafx-sdk-11.0.2/lib
 alias python=/usr/local/bin/python3.7
+
+# If there is cache available
+if [[ -f ~/dotfiles/.antigen}/.cache/.zcache-payload ]]; then
+  # Load bundles statically
+  source ~/dotfiles/.antigen}/.cache/.zcache-payload
+
+  # You will need to call compinit
+  autoload -Uz compinstall compinit
+  if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+    compinit -d ${HOME}/.zcompdump
+  fi
+  compinit -C
+  # autoload -Uz compinit
+  # compinit -d ${HOME}/.zcompdump
+else
+  # If there is no cache available do load and execute antigen
+  source ~/dotfiles/antigen/bin/antigen.zsh
+  antigen init ~/dotfiles/.antigenrc > /dev/null 2>&1
+  antigen cache-gen
+fi
