@@ -7,8 +7,8 @@ export PATH="/usr/local/bin:/usr/local/sbin:/bin:/usr/sbin:/sbin:/usr/bin:$PATH"
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
 # Default user
-DEFAULT_USER=cchacin
-BULLETTRAIN_CONTEXT_DEFAULT_USER=cchacin
+DEFAULT_USER=ccchacin
+BULLETTRAIN_CONTEXT_DEFAULT_USER=ccchacin
 
 # # JENV
 if [ ! -n "${BULLETTRAIN_JENV_BG+1}" ]; then
@@ -51,8 +51,6 @@ export SSH_KEY_PATH="$HOME/.ssh"
 
 #ALIAS for GIT
 alias gitlog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-alias gfm="git fetch; git merge origin/master"
-alias gitfmp="git fetch; git merge origin/master --no-edit; ggpush master"
 
 #Alias for Finder
 alias showFiles="defaults write com.apple.finder AppleShowAllFiles YES;killall Finder /System/Library/CoreServices/Finder.app"
@@ -65,17 +63,19 @@ alias mver="mvn versions:display-dependency-updates versions:display-plugin-upda
 alias cat="bat --style=numbers,changes"
 
 # JavaFX 11
-export PATH_TO_FX=~/Downloads/javafx-sdk-11.0.2/lib
-alias python=/usr/local/bin/python3.7
+export PATH_TO_FX=${HOME}/Downloads/javafx-sdk-11.0.2/lib
+
+# python3
+# alias python=/usr/local/bin/python3.7
 
 # If there is cache available
-if [[ -f ~/dotfiles/.antigen}/.cache/.zcache-payload ]]; then
+if [[ -f ${HOME}/.antigen/.cache/.zcache-payload ]]; then
   # Load bundles statically
-  source ~/dotfiles/.antigen}/.cache/.zcache-payload
+  source ${HOME}/.antigen/.cache/.zcache-payload
 
   # You will need to call compinit
   autoload -Uz compinstall compinit
-  if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+  if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ${HOME}/.zcompdump) ]; then
     compinit -d ${HOME}/.zcompdump
   fi
   compinit -C
@@ -83,11 +83,13 @@ if [[ -f ~/dotfiles/.antigen}/.cache/.zcache-payload ]]; then
   # compinit -d ${HOME}/.zcompdump
 else
   # If there is no cache available do load and execute antigen
-  source ~/dotfiles/antigen/bin/antigen.zsh
-  antigen init ~/dotfiles/.antigenrc > /dev/null 2>&1
+  source ${HOME}/antigen.zsh
+  antigen init ${HOME}/dotfiles/.antigenrc > /dev/null 2>&1
   antigen cache-gen
 fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+source ~/dotfiles/private.sh || true

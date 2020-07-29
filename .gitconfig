@@ -8,11 +8,12 @@
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	commitGraph = true
 	autocrlf = input
+	excludesfile = ~/.gitignore
 [user]
 	name = Carlos Chacin
-	email = cchacin@gmail.com
+	email = ccchacin@amazon.com
 	useconfigonly = true
-	signingKey = 163073B3A72E251B
+	signingKey = E27DD8798B47B087
 [merge]
 	tool = diffmerge
 [diff]
@@ -26,12 +27,6 @@
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
 	required = true
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
-[mergetool "sourcetree"]
-	cmd = /Users/cchacin/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
@@ -40,7 +35,7 @@
 [commit]
 	gpgsign = true
 [gpg]
-	program = /usr/local/MacGPG2/bin/gpg2
+	program = /usr/local/bin/gpg
 
 [includeIf "gitdir:~/Git/groupon/jtier/"]
   path = .gitconfig-groupon
