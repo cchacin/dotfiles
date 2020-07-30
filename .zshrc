@@ -59,9 +59,6 @@ alias hideFiles="defaults write com.apple.finder AppleShowAllFiles NO;killall Fi
 #Alias for maven
 alias mver="mvn versions:display-dependency-updates versions:display-plugin-updates | grep 'INFO' | grep '>' | sort | uniq"
 
-#Alias for cat
-alias cat="bat --style=numbers,changes"
-
 # JavaFX 11
 export PATH_TO_FX=${HOME}/Downloads/javafx-sdk-11.0.2/lib
 
