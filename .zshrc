@@ -1,53 +1,11 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 zmodload zsh/zprof
-
-# Brew
-export PATH="/usr/local/bin:/usr/local/sbin:/bin:/usr/sbin:/sbin:/usr/bin:$PATH"
-
-# Brew curl
-export PATH="/usr/local/opt/curl/bin:$PATH"
-
-# Default user
-DEFAULT_USER=ccchacin
-BULLETTRAIN_CONTEXT_DEFAULT_USER=ccchacin
-
-# # JENV
-if [ ! -n "${BULLETTRAIN_JENV_BG+1}" ]; then
-  BULLETTRAIN_JENV_BG=black
-fi
-if [ ! -n "${BULLETTRAIN_JENV_FG+1}" ]; then
-  BULLETTRAIN_JENV_FG=white
-fi
-if [ ! -n "${BULLETTRAIN_JENV_PREFIX+1}" ]; then
-  BULLETTRAIN_JENV_PREFIX="\u2615 "
-fi
-
-# JENV: Java version manager
-prompt_jenv() {
-  local jenv_prompt
-  if $(jenv >/dev/null 2>&1); then
-    jenv_prompt="$(jenv version-name)"
-    prompt_segment $BULLETTRAIN_JENV_BG $BULLETTRAIN_JENV_FG $BULLETTRAIN_JENV_PREFIX$jenv_prompt
-  fi
-}
-  BULLETTRAIN_PROMPT_ORDER=(
-    time
-    status
-    custom
-    context
-    dir
-    perl
-    ruby
-    virtualenv
-    jenv
-    go
-    elixir
-    git
-    hg
-    cmd_exec_time
-  )
-
-# SSH
-export SSH_KEY_PATH="$HOME/.ssh"
 
 #ALIAS for GIT
 alias gitlog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -58,12 +16,6 @@ alias hideFiles="defaults write com.apple.finder AppleShowAllFiles NO;killall Fi
 
 #Alias for maven
 alias mver="mvn versions:display-dependency-updates versions:display-plugin-updates | grep 'INFO' | grep '>' | sort | uniq"
-
-# JavaFX 11
-export PATH_TO_FX=${HOME}/Downloads/javafx-sdk-11.0.2/lib
-
-# python3
-# alias python=/usr/local/bin/python3.7
 
 # If there is cache available
 if [[ -f ${HOME}/.antigen/.cache/.zcache-payload ]]; then
@@ -76,8 +28,6 @@ if [[ -f ${HOME}/.antigen/.cache/.zcache-payload ]]; then
     compinit -d ${HOME}/.zcompdump
   fi
   compinit -C
-  # autoload -Uz compinit
-  # compinit -d ${HOME}/.zcompdump
 else
   # If there is no cache available do load and execute antigen
   source ${HOME}/antigen.zsh
@@ -85,8 +35,5 @@ else
   antigen cache-gen
 fi
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
-source ~/dotfiles/private.sh || true
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

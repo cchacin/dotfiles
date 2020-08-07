@@ -11,9 +11,9 @@
 	excludesfile = ~/.gitignore
 [user]
 	name = Carlos Chacin
-	email = ccchacin@amazon.com
+	email = cchacin@gmail.com
 	useconfigonly = true
-	signingKey = E27DD8798B47B087
+	signingKey = 186524BD
 [merge]
 	tool = diffmerge
 [diff]
