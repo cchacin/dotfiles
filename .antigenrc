@@ -22,6 +22,8 @@ antigen bundles <<EOBUNDLES
   httpie
   mvn
   sudo
+  rbenv
+  jenv
   zsh-users/zsh-syntax-highlighting
 EOBUNDLES
 

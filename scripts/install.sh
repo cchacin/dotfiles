@@ -21,16 +21,19 @@ else
   git clone https://github.com/cchacin/dotfiles.git
 fi
 
-# if homebrew exists install all the formulas
-if which brew > /dev/null; then
-  echo "==> brew already installed..."
-else
-  echo "==> Installing homebrew"
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-fi
+UNAME=`uname`
+if [[ "$unamestr" == 'Darwin' ]]; then
+  # if homebrew exists install all the formulas
+  if which brew > /dev/null; then
+    echo "==> brew already installed..."
+  else
+    echo "==> Installing homebrew"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  fi
 
-echo "==> Installing homebrew formulas"
-brew bundle install
+  echo "==> Installing homebrew formulas"
+  brew bundle install
+fi
 
 echo "==> Linking DotFiles to ${HOME}"
 ln -s "${DOTFILES}"/.gitconfig "${HOME}"/.
@@ -43,6 +46,6 @@ ln -s "${DOTFILES}"/.zprofile "${HOME}"/.
 ln -s "${DOTFILES}"/.zshenv "${HOME}"/.
 ln -s "${DOTFILES}"/.zshrc "${HOME}"/.
 ln -s "${DOTFILES}"/.antigenrc "${HOME}"/.
-ln -s "${DOTFILES}"/.antigen.zsh "${HOME}"/.
+ln -s "${DOTFILES}"/antigen.zsh "${HOME}"/.
 
 echo "==> Done."

@@ -37,29 +37,13 @@
 [gpg]
 	program = /usr/local/bin/gpg
 
-[includeIf "gitdir:~/Git/groupon/jtier/"]
-  path = .gitconfig-groupon
-[includeIf "gitdir:~/Git/groupon/"]
-  path = .gitconfig-groupon
+[includeIf "gitdir:~/workplace/"]
+  path = .gitconfig-work
 [color]
 	ui = true
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
-[color "diff"]
-	meta = 227
-	frag = magenta bold
-	commit = 227 bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
 [rerere]
 	enabled = true
 [pull]
 	rebase = true
 [gc]
-	writeCommitGraph = true
-[fetch]
 	writeCommitGraph = true
