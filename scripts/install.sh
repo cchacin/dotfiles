@@ -21,8 +21,7 @@ else
   git clone https://github.com/cchacin/dotfiles.git
 fi
 
-UNAME=`uname`
-if [[ "$unamestr" == 'Darwin' ]]; then
+if [[ $OSTYPE == darwin* ]]; then
   # if homebrew exists install all the formulas
   if which brew > /dev/null; then
     echo "==> brew already installed..."
@@ -36,6 +35,7 @@ if [[ "$unamestr" == 'Darwin' ]]; then
 fi
 
 echo "==> Linking DotFiles to ${HOME}"
+ln -s "${DOTFILES}"/.aliases.sh "${HOME}"/.
 ln -s "${DOTFILES}"/.gitconfig "${HOME}"/.
 ln -s "${DOTFILES}"/.ghci "${HOME}"/.
 ln -s "${DOTFILES}"/.gitignore "${HOME}"/.
