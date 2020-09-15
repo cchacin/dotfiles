@@ -1,10 +1,14 @@
 # dotfiles
 
+![Dotfiles Installation gif](DotfilesInstallation.gif)
+
 ## What's in there
 
 ### OhMyZsh
 
-Configured using [antigen]() and [powerlevel10k]() theme
+[OhMyZsh](https://ohmyz.sh/) configured using [Antigen](https://antigen.sharats.me/) and [powerlevel10k](https://github.com/romkatv/powerlevel10k) theme:
+
+![prompt style image](prompt-style.png)
 
 OhMyZSH Plugins:
 
@@ -33,7 +37,7 @@ OhMyZSH Plugins:
 
 ### Homebrew
 
-Homebrew formulas and casks installed and backed up in a bundle: `Brewfile`
+[Homebrew](https://brew.sh/) formulas and casks installed and backed up in a bundle: `Brewfile`
 
 - `brew bundle install` to install all the formulas and casks
 - `brew bundle dump -f` to regenerate the `Brewfile`
@@ -44,8 +48,8 @@ Homebrew formulas and casks installed and backed up in a bundle: `Brewfile`
 
 ### Java
 - JDKs installed with Hombrew
-- [jEnv]() installed with Hombrew
-- Global `.mavenrc` using [jEnv]()
+- [jEnv](https://www.jenv.be/) installed with Hombrew
+- Global `.mavenrc` using [jEnv](https://www.jenv.be/)
 
 ## How to install:
 ```sh
