@@ -30,19 +30,5 @@ do
   echo "    ==> ✅ Linked ${filename}";
 done;
 
-if [[ $OSTYPE == darwin* ]]; then
-  echo "  ==> 🚧 Configuring MacOS..."
-  if which brew > /dev/null; then
-    echo "    ==> ✅ homebrew is already installed"
-  else
-    echo "    ==> 🚧 Installing homebrew..."
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-  fi
-
-  echo "    ==> 🚧 Installing homebrew formulas"
-  cd $HOME
-  brew bundle install
-fi
-
 cd $DOTFILES
 echo "==> ✅ Done."
