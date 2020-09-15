@@ -23,7 +23,14 @@ else
   cd "${DOTFILES}"
 fi
 
-if [ $OSTYPE == darwin* ]; then
+echo "  ==> 🚧 Linking Dotfiles to ${HOME}..."
+for filename in $(ls -A ${DOTFILES}/files);
+do
+  ln -sf "${DOTFILES}/files/${filename}" "${HOME}"/.
+  echo "    ==> ✅ Linked ${filename}";
+done;
+
+if [[ $OSTYPE == darwin* ]]; then
   echo "  ==> 🚧 Configuring MacOS..."
   if which brew > /dev/null; then
     echo "    ==> ✅ homebrew is already installed"
@@ -33,14 +40,9 @@ if [ $OSTYPE == darwin* ]; then
   fi
 
   echo "    ==> 🚧 Installing homebrew formulas"
+  cd $HOME
   brew bundle install
 fi
 
-echo "  ==> 🚧 Linking Dotfiles to ${HOME}..."
-for filename in $(ls -A ${DOTFILES}/files);
-do
-  ln -sf "${DOTFILES}/files/${filename}" "${HOME}"/.
-  echo "    ==> ✅ Linked ${filename}";
-done;
-
+cd $DOTFILES
 echo "==> ✅ Done."
