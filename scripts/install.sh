@@ -10,8 +10,8 @@ echo "  \__,_|\___/ \__| |_| |_|_|\___||___/"
 echo ""
 
 echo "==> 🚧 Starting..."
-cd "$HOME"
-DOTFILES=${HOME}/dotfiles
+cd ~
+DOTFILES=~/dotfiles
 
 if [ -d "${DOTFILES}" ]; then
   echo "  ==> ✅ Dotfiles already present"
@@ -20,15 +20,15 @@ if [ -d "${DOTFILES}" ]; then
 else
   echo "  ==> 🚧 Cloning Dotfiles..."
   git clone https://github.com/cchacin/dotfiles.git
-  cd "${DOTFILES}"
+  cd ${DOTFILES}
 fi
 
-echo "  ==> 🚧 Linking Dotfiles to ${HOME}..."
+echo "  ==> 🚧 Linking Dotfiles to ~..."
 for filename in $(ls -A ${DOTFILES}/files);
 do
-  ln -sf "${DOTFILES}/files/${filename}" "${HOME}"/.
+  ln -sf "${DOTFILES}/files/${filename}" ~/.
   echo "    ==> ✅ Linked ${filename}";
 done;
 
-cd $DOTFILES
+cd ${DOTFILES}
 echo "==> ✅ Done."
