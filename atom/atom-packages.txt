@@ -1,0 +1,10 @@
+asciidoc-assistant
+asciidoc-image-helper
+asciidoc-preview
+atom-beautify
+atom-runner
+autocomplete-asciidoc
+intellij-idea-keymap
+jekyll
+language-asciidoc
+platformio-ide-terminal

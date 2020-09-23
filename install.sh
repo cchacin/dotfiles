@@ -23,12 +23,15 @@ else
   cd ${DOTFILES}
 fi
 
+cd ${DOTFILES}
+
 echo "  ==> 🚧 Linking Dotfiles to ~..."
-for filename in $(ls -A ${DOTFILES}/files);
+for filename in $(ls .);
 do
-  ln -sf "${DOTFILES}/files/${filename}" ~/.
-  echo "    ==> ✅ Linked ${filename}";
+  if [ -d "${filename}" ]; then
+    stow -R ${filename}
+    echo "    ==> ✅ Linked ${filename}"
+  fi
 done;
 
-cd ${DOTFILES}
 echo "==> ✅ Done."
