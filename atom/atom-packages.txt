@@ -2,6 +2,7 @@ asciidoc-assistant
 asciidoc-image-helper
 asciidoc-preview
 atom-beautify
+atom-html-preview
 atom-runner
 autocomplete-asciidoc
 intellij-idea-keymap
