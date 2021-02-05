@@ -46,6 +46,10 @@ OhMyZSH Plugins:
 - `brew bundle install` to install all the formulas and casks
 - `brew bundle dump -f` to regenerate the `Brewfile`
 
+### Atom
+
+- `apm list --installed --bare | grep '^[^@]\+' -o > atom/atom-packages.txt`
+
 ### Git
 - Global `.gitconfig`
 - Global `.gitignore`
@@ -54,6 +58,10 @@ OhMyZSH Plugins:
 - JDKs installed with Hombrew
 - [jEnv][6] installed with Hombrew
 - Global `.mavenrc` using [jEnv][6]
+
+### OBS Studio
+
+All the obs-studio configurations, scenes and profiles
 
 ## How to install:
 ```sh
