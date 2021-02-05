@@ -1,3 +1,11 @@
+# homebrew
 Brewfile.lock.json
+
+# zsh
 *.zwc
 *.old
+
+# obs-studio
+obs-studio/logs
+obs-studio/profiler_data
+obs-studio/**/*.bak
