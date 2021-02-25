@@ -25,6 +25,7 @@ antigen bundles <<EOBUNDLES
   rbenv
   jenv
   zsh-users/zsh-syntax-highlighting
+  zdharma/zsh-diff-so-fancy
 EOBUNDLES
 
 # Load the theme.
