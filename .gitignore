@@ -9,3 +9,6 @@ Brewfile.lock.json
 **/obs-studio/logs
 **/obs-studio/profiler_data
 **/obs-studio/**/*.bak
+
+# MacOS
+.DS_Store
