@@ -3,9 +3,15 @@ asciidoc-image-helper
 asciidoc-preview
 atom-beautify
 atom-html-preview
+atom-liquid-snippets
 atom-runner
 autocomplete-asciidoc
+emmet
 intellij-idea-keymap
 jekyll
 language-asciidoc
+language-liquid
+pigments
+plantuml
+plantuml-viewer
 platformio-ide-terminal
