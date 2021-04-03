@@ -31,8 +31,8 @@
         "versioned_id": "coreaudio_input_capture",
         "volume": 0.015860509127378464
     },
-    "current_program_scene": "Desktop",
-    "current_scene": "Desktop",
+    "current_program_scene": "Intro",
+    "current_scene": "Side by Side",
     "current_transition": "Cut",
     "groups": [
         {
@@ -219,7 +219,7 @@
     "preview_locked": false,
     "quick_transitions": [
         {
-            "duration": 300,
+            "duration": 1000,
             "fade_to_black": false,
             "hotkeys": [
                 {
@@ -227,21 +227,7 @@
                 }
             ],
             "id": 1,
-            "name": "Cut"
-        },
-        {
-            "duration": 300,
-            "fade_to_black": false,
-            "hotkeys": [],
-            "id": 2,
-            "name": "Fade"
-        },
-        {
-            "duration": 300,
-            "fade_to_black": true,
-            "hotkeys": [],
-            "id": 3,
-            "name": "Fade"
+            "name": "Move"
         }
     ],
     "saved_projectors": [],
@@ -268,11 +254,11 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
-            "id": "window_capture",
+            "id": "text_ft2_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "IntelliJ",
+            "name": "TwitterName",
             "prev_ver": 436273154,
             "private_settings": {},
             "push-to-mute": false,
@@ -280,13 +266,47 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "owner_name": "IntelliJ IDEA",
-                "owner_pid": 88386,
-                "window": 12365,
-                "window_name": "myservice – pom.xml (todo)"
+                "font": {
+                    "face": "Righteous",
+                    "flags": 0,
+                    "size": 72,
+                    "style": "Regular"
+                },
+                "text": "@CarlosChacin"
             },
             "sync": 0,
-            "versioned_id": "window_capture",
+            "versioned_id": "text_ft2_source_v2",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "text_ft2_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "YoutubeChannelName",
+            "prev_ver": 436273154,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "font": {
+                    "face": "Righteous",
+                    "flags": 0,
+                    "size": 72,
+                    "style": "Regular"
+                },
+                "text": "/CarlosChacin"
+            },
+            "sync": 0,
+            "versioned_id": "text_ft2_source_v2",
             "volume": 1.0
         },
         {
@@ -300,7 +320,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "SxSBackground",
+            "name": "Youtube",
             "prev_ver": 436273154,
             "private_settings": {},
             "push-to-mute": false,
@@ -308,39 +328,10 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "/Users/ccchacin/Documents/OBS Settings/Blue Crinkle/Scenes backgrounds and intermission/Intermission-talk scene/TALK SCENE BACKGROUND/BLUE--CRINKLE-BACKGROUND.png"
+                "file": "/Users/ccchacin/Documents/OBS Settings/Blue Crinkle/Icons/YOUTUBE_3.png"
             },
             "sync": 0,
             "versioned_id": "image_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "window_capture",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "iTerm",
-            "prev_ver": 436273154,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "owner_name": "iTerm2",
-                "show_empty_names": false,
-                "show_shadow": false,
-                "window": 11636,
-                "window_name": "ccchacin@3c22fb7b8b51:~"
-            },
-            "sync": 0,
-            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
@@ -354,7 +345,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "DesktopBackground",
+            "name": "Twitter",
             "prev_ver": 436273154,
             "private_settings": {},
             "push-to-mute": false,
@@ -362,8 +353,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "/Users/ccchacin/Documents/OBS Settings/Blue Crinkle/Scenes backgrounds and intermission/Intermission-talk scene/TALK SCENE BACKGROUND/BACKGROUND-16-9.png",
-                "unload": false
+                "file": "/Users/ccchacin/Documents/OBS Settings/Blue Crinkle/Icons/TWITTER_3.png"
             },
             "sync": 0,
             "versioned_id": "image_source",
@@ -374,41 +364,13 @@
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
-            "filters": [
-                {
-                    "balance": 0.5,
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "chroma_key_filter",
-                    "mixers": 0,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Chroma Key",
-                    "prev_ver": 436273154,
-                    "private_settings": {},
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "similarity": 450,
-                        "spill": 120
-                    },
-                    "sync": 0,
-                    "versioned_id": "chroma_key_filter",
-                    "volume": 1.0
-                }
-            ],
             "flags": 0,
             "hotkeys": {},
-            "id": "av_capture_input",
+            "id": "image_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "WebCam",
+            "name": "Background",
             "prev_ver": 436273154,
             "private_settings": {},
             "push-to-mute": false,
@@ -416,435 +378,11 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "device": "0x220000046d0892",
-                "device_name": "HD Pro Webcam C920 #2",
-                "preset": "AVCaptureSessionPreset1280x720"
+                "file": "/Users/ccchacin/Documents/OBS Settings/Blue Crinkle/Scenes backgrounds and intermission/Intermission-talk scene/TALK SCENE BACKGROUND/BLUE--CRINKLE-BACKGROUND.png",
+                "unload": true
             },
             "sync": 0,
-            "versioned_id": "av_capture_input",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.IntelliJ": [],
-                "libobs.hide_scene_item.SxSBackground": [],
-                "libobs.hide_scene_item.WebCam": [],
-                "libobs.show_scene_item.IntelliJ": [],
-                "libobs.show_scene_item.SxSBackground": [],
-                "libobs.show_scene_item.WebCam": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Side by Side",
-            "prev_ver": 436273154,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 6,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 2,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": true,
-                        "name": "SxSBackground",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 4,
-                        "locked": true,
-                        "name": "IntelliJ",
-                        "pos": {
-                            "x": 105.0,
-                            "y": 14.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.333984375,
-                            "y": 0.33402776718139648
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 303,
-                        "crop_right": 198,
-                        "crop_top": 163,
-                        "group_item_backup": false,
-                        "id": 6,
-                        "locked": true,
-                        "name": "WebCam",
-                        "pos": {
-                            "x": 1280.0,
-                            "y": 571.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.7201540470123291,
-                            "y": 0.71992820501327515
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "versioned_id": "scene",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "filters": [
-                {
-                    "balance": 0.5,
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "noise_suppress_filter",
-                    "mixers": 255,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Noise Suppression",
-                    "prev_ver": 436273154,
-                    "private_settings": {},
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "method": "speex",
-                        "suppress_level": -45
-                    },
-                    "sync": 0,
-                    "versioned_id": "noise_suppress_filter_v2",
-                    "volume": 1.0
-                },
-                {
-                    "balance": 0.5,
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "noise_gate_filter",
-                    "mixers": 255,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Noise Gate",
-                    "prev_ver": 436273154,
-                    "private_settings": {},
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "close_threshold": -38.0,
-                        "open_threshold": -30.0
-                    },
-                    "sync": 0,
-                    "versioned_id": "noise_gate_filter",
-                    "volume": 1.0
-                },
-                {
-                    "balance": 0.5,
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "compressor_filter",
-                    "mixers": 255,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Compressor (limiter)",
-                    "prev_ver": 436273154,
-                    "private_settings": {},
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "attack_time": 3,
-                        "output_gain": 6.0,
-                        "release_time": 15,
-                        "sidechain_source": "none",
-                        "threshold": -6.0
-                    },
-                    "sync": 0,
-                    "versioned_id": "compressor_filter",
-                    "volume": 1.0
-                },
-                {
-                    "balance": 0.5,
-                    "deinterlace_field_order": 0,
-                    "deinterlace_mode": 0,
-                    "enabled": true,
-                    "flags": 0,
-                    "hotkeys": {},
-                    "id": "compressor_filter",
-                    "mixers": 255,
-                    "monitoring_type": 0,
-                    "muted": false,
-                    "name": "Compressor",
-                    "prev_ver": 436273154,
-                    "private_settings": {},
-                    "push-to-mute": false,
-                    "push-to-mute-delay": 0,
-                    "push-to-talk": false,
-                    "push-to-talk-delay": 0,
-                    "settings": {
-                        "attack_time": 3,
-                        "output_gain": 4.0,
-                        "ratio": 3.0,
-                        "release_time": 15,
-                        "threshold": -24.0
-                    },
-                    "sync": 0,
-                    "versioned_id": "compressor_filter",
-                    "volume": 1.0
-                }
-            ],
-            "flags": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "coreaudio_input_capture",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Blue Yeti Mic",
-            "prev_ver": 436273154,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "device_id": "AppleUSBAudioEngine:Generic:Blue Microphones:201701110001:1"
-            },
-            "sync": 0,
-            "versioned_id": "coreaudio_input_capture",
-            "volume": 0.54872983694076538
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [
-                    {
-                        "key": "OBS_KEY_1"
-                    }
-                ],
-                "libobs.hide_scene_item.Blue Yeti Mic": [],
-                "libobs.hide_scene_item.DesktopBackground": [],
-                "libobs.hide_scene_item.WebCam": [],
-                "libobs.hide_scene_item.iTerm": [],
-                "libobs.show_scene_item.Blue Yeti Mic": [],
-                "libobs.show_scene_item.DesktopBackground": [],
-                "libobs.show_scene_item.WebCam": [],
-                "libobs.show_scene_item.iTerm": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Desktop",
-            "prev_ver": 436273154,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 21,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 14,
-                        "locked": true,
-                        "name": "Blue Yeti Mic",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 18,
-                        "locked": true,
-                        "name": "DesktopBackground",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 303,
-                        "crop_right": 198,
-                        "crop_top": 163,
-                        "group_item_backup": false,
-                        "id": 19,
-                        "locked": true,
-                        "name": "WebCam",
-                        "pos": {
-                            "x": 67.0,
-                            "y": 746.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.5596919059753418,
-                            "y": 0.56014364957809448
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 20,
-                        "locked": true,
-                        "name": "iTerm",
-                        "pos": {
-                            "x": 625.0,
-                            "y": 48.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.244140625,
-                            "y": 0.24406901001930237
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "versioned_id": "scene",
+            "versioned_id": "image_source",
             "volume": 1.0
         },
         {
@@ -1092,12 +630,491 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [
+                    {
+                        "key": "OBS_KEY_1"
+                    }
+                ],
+                "libobs.hide_scene_item.Blue Yeti Mic": [],
+                "libobs.hide_scene_item.DesktopBackground": [],
+                "libobs.hide_scene_item.iTerm": [],
+                "libobs.show_scene_item.Blue Yeti Mic": [],
+                "libobs.show_scene_item.DesktopBackground": [],
+                "libobs.show_scene_item.iTerm": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Desktop",
+            "prev_ver": 436273154,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 21,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 14,
+                        "locked": true,
+                        "name": "Blue Yeti Mic",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 18,
+                        "locked": true,
+                        "name": "DesktopBackground",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 20,
+                        "locked": true,
+                        "name": "iTerm",
+                        "pos": {
+                            "x": 625.0,
+                            "y": 48.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.244140625,
+                            "y": 0.24406901001930237
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "versioned_id": "scene",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "filters": [
+                {
+                    "balance": 0.5,
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "noise_suppress_filter",
+                    "mixers": 255,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Noise Suppression",
+                    "prev_ver": 436273154,
+                    "private_settings": {},
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "method": "speex",
+                        "suppress_level": -45
+                    },
+                    "sync": 0,
+                    "versioned_id": "noise_suppress_filter_v2",
+                    "volume": 1.0
+                },
+                {
+                    "balance": 0.5,
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "noise_gate_filter",
+                    "mixers": 255,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Noise Gate",
+                    "prev_ver": 436273154,
+                    "private_settings": {},
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "close_threshold": -38.0,
+                        "open_threshold": -30.0
+                    },
+                    "sync": 0,
+                    "versioned_id": "noise_gate_filter",
+                    "volume": 1.0
+                },
+                {
+                    "balance": 0.5,
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "compressor_filter",
+                    "mixers": 255,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Compressor (limiter)",
+                    "prev_ver": 436273154,
+                    "private_settings": {},
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "attack_time": 3,
+                        "output_gain": 6.0,
+                        "release_time": 15,
+                        "sidechain_source": "none",
+                        "threshold": -6.0
+                    },
+                    "sync": 0,
+                    "versioned_id": "compressor_filter",
+                    "volume": 1.0
+                },
+                {
+                    "balance": 0.5,
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "compressor_filter",
+                    "mixers": 255,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Compressor",
+                    "prev_ver": 436273154,
+                    "private_settings": {},
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "attack_time": 3,
+                        "output_gain": 4.0,
+                        "ratio": 3.0,
+                        "release_time": 15,
+                        "threshold": -24.0
+                    },
+                    "sync": 0,
+                    "versioned_id": "compressor_filter",
+                    "volume": 1.0
+                }
+            ],
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "coreaudio_input_capture",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Blue Yeti Mic",
+            "prev_ver": 436273154,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "device_id": "AppleUSBAudioEngine:Generic:Blue Microphones:201701110001:1"
+            },
+            "sync": 0,
+            "versioned_id": "coreaudio_input_capture",
+            "volume": 0.54872983694076538
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Blue Yeti Mic": [],
+                "libobs.hide_scene_item.IntelliJ": [],
+                "libobs.hide_scene_item.SxSBackground": [],
+                "libobs.hide_scene_item.WebCam": [],
+                "libobs.show_scene_item.Blue Yeti Mic": [],
+                "libobs.show_scene_item.IntelliJ": [],
+                "libobs.show_scene_item.SxSBackground": [],
+                "libobs.show_scene_item.WebCam": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Side by Side",
+            "prev_ver": 436273154,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 7,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 7,
+                        "locked": true,
+                        "name": "Blue Yeti Mic",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 2,
+                        "locked": true,
+                        "name": "SxSBackground",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 4,
+                        "locked": true,
+                        "name": "IntelliJ",
+                        "pos": {
+                            "x": 105.0,
+                            "y": 14.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.333984375,
+                            "y": 0.33402776718139648
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 303,
+                        "crop_right": 198,
+                        "crop_top": 163,
+                        "group_item_backup": false,
+                        "id": 6,
+                        "locked": true,
+                        "name": "WebCam",
+                        "pos": {
+                            "x": 1280.0,
+                            "y": 571.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.7201540470123291,
+                            "y": 0.71992820501327515
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "versioned_id": "scene",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "filters": [
+                {
+                    "balance": 0.5,
+                    "deinterlace_field_order": 0,
+                    "deinterlace_mode": 0,
+                    "enabled": true,
+                    "flags": 0,
+                    "hotkeys": {},
+                    "id": "chroma_key_filter",
+                    "mixers": 0,
+                    "monitoring_type": 0,
+                    "muted": false,
+                    "name": "Chroma Key",
+                    "prev_ver": 436273154,
+                    "private_settings": {},
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "settings": {
+                        "similarity": 450,
+                        "spill": 120
+                    },
+                    "sync": 0,
+                    "versioned_id": "chroma_key_filter",
+                    "volume": 1.0
+                }
+            ],
+            "flags": 0,
+            "hotkeys": {},
+            "id": "av_capture_input",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "WebCam",
+            "prev_ver": 436273154,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "buffering": false,
+                "device": "0x1220000046d0892",
+                "device_name": "HD Pro Webcam C920",
+                "preset": "AVCaptureSessionPreset1280x720"
+            },
+            "sync": 0,
+            "versioned_id": "av_capture_input",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
             "hotkeys": {},
             "id": "image_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Background",
+            "name": "DesktopBackground",
             "prev_ver": 436273154,
             "private_settings": {},
             "push-to-mute": false,
@@ -1106,10 +1123,39 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "file": "/Users/ccchacin/Documents/OBS Settings/Blue Crinkle/Scenes backgrounds and intermission/Intermission-talk scene/TALK SCENE BACKGROUND/BLUE--CRINKLE-BACKGROUND.png",
-                "unload": false
+                "unload": true
             },
             "sync": 0,
             "versioned_id": "image_source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "window_capture",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "iTerm",
+            "prev_ver": 436273154,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "owner_name": "iTerm2",
+                "show_empty_names": false,
+                "show_shadow": false,
+                "window": 11636,
+                "window_name": "ccchacin@3c22fb7b8b51:~"
+            },
+            "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
@@ -1123,7 +1169,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Twitter",
+            "name": "SxSBackground",
             "prev_ver": 436273154,
             "private_settings": {},
             "push-to-mute": false,
@@ -1131,7 +1177,8 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "/Users/ccchacin/Documents/OBS Settings/Blue Crinkle/Icons/TWITTER_3.png"
+                "file": "/Users/ccchacin/Documents/OBS Settings/Blue Crinkle/Scenes backgrounds and intermission/Intermission-talk scene/TALK SCENE BACKGROUND/BLUE--CRINKLE-BACKGROUND.png",
+                "unload": true
             },
             "sync": 0,
             "versioned_id": "image_source",
@@ -1144,11 +1191,11 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
-            "id": "image_source",
+            "id": "window_capture",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Youtube",
+            "name": "IntelliJ",
             "prev_ver": 436273154,
             "private_settings": {},
             "push-to-mute": false,
@@ -1156,72 +1203,13 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "/Users/ccchacin/Documents/OBS Settings/Blue Crinkle/Icons/YOUTUBE_3.png"
+                "owner_name": "IntelliJ IDEA",
+                "owner_pid": 88386,
+                "window": 12365,
+                "window_name": "myservice – pom.xml (todo)"
             },
             "sync": 0,
-            "versioned_id": "image_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_ft2_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "YoutubeChannelName",
-            "prev_ver": 436273154,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "font": {
-                    "face": "Righteous",
-                    "flags": 0,
-                    "size": 72,
-                    "style": "Regular"
-                },
-                "text": "/CarlosChacin"
-            },
-            "sync": 0,
-            "versioned_id": "text_ft2_source_v2",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_ft2_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "TwitterName",
-            "prev_ver": 436273154,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "font": {
-                    "face": "Righteous",
-                    "flags": 0,
-                    "size": 72,
-                    "style": "Regular"
-                },
-                "text": "@CarlosChacin"
-            },
-            "sync": 0,
-            "versioned_id": "text_ft2_source_v2",
+            "versioned_id": "window_capture",
             "volume": 1.0
         }
     ],
