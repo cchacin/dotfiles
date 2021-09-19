@@ -12,6 +12,7 @@
 	name = Carlos Chacin
 	email = cchacin@gmail.com
 	useconfigonly = true
+	signingkey = 2DBE2879
 [includeIf "gitdir:~/workplace/"]
   path = .gitconfig-work
 [merge]
@@ -33,7 +34,7 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 [commit]
-	gpgsign = false
+	gpgsign = true
 [gpg]
 	program = /usr/local/bin/gpg
 [color]
