@@ -1,3 +1,4 @@
+Zen
 asciidoc-assistant
 asciidoc-image-helper
 asciidoc-preview
@@ -7,11 +8,17 @@ atom-liquid-snippets
 atom-runner
 autocomplete-asciidoc
 emmet
+git-plus
 intellij-idea-keymap
 jekyll
 language-asciidoc
+language-haml
 language-liquid
+language-mediawiki
+language-restructuredtext
+markdown-table-formatter
 pigments
 plantuml
 plantuml-viewer
 platformio-ide-terminal
+solarized-dark-ui
