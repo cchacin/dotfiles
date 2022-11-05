@@ -6,12 +6,14 @@ antigen bundles <<EOBUNDLES
   ssh-agent
   gpg-agent
   autojump
+  aws
   brew
   brew-cask
   colored-man-pages
   common-aliases
   docker
   docker-compose
+  dotenv
   git
   git-extras
   git-hubflow

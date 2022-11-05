@@ -17,3 +17,12 @@ alias mver="mvn versions:display-dependency-updates versions:display-plugin-upda
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+
+jwtd() {
+  h=`jq -R 'split(".") | .[0] | @base64d | fromjson' <<< "$1"` > /dev/null
+  p=`jq -R 'split(".") | .[1] | @base64d | fromjson' <<< "$1"` > /dev/null
+  echo "Header:\n"
+  echo $h | jq
+  echo "\nPayload:\n"
+  echo $p | jq
+}

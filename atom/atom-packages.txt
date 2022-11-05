@@ -3,6 +3,7 @@ asciidoc-assistant
 asciidoc-image-helper
 asciidoc-preview
 atom-beautify
+atom-browsersync
 atom-html-preview
 atom-liquid-snippets
 atom-runner
@@ -16,6 +17,7 @@ language-haml
 language-liquid
 language-mediawiki
 language-restructuredtext
+language-xwiki
 markdown-table-formatter
 pigments
 plantuml
