@@ -42,3 +42,8 @@ fi
 # Add Jbang to environment
 alias j!=jbang
 export PATH="$HOME/.jbang/bin:$PATH"
+
+# Haskell GHCUP
+export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
+
+. /usr/local/opt/asdf/libexec/asdf.sh

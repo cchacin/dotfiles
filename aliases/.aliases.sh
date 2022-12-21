@@ -26,3 +26,5 @@ jwtd() {
   echo "\nPayload:\n"
   echo $p | jq
 }
+
+alias vim=nvim
