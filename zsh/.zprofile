@@ -6,6 +6,26 @@ if [[ -z "$LANG" ]]; then
     export LANGUAGE=en_US.UTF-8
 fi
 
+#
+# Browser
+#
+if [[ -z "$BROWSER" && "$OSTYPE" == darwin* ]]; then
+  export BROWSER='open'
+fi
+
+#
+# Editors
+#
+if [[ -z "$EDITOR" ]]; then
+  export EDITOR='vim'
+fi
+if [[ -z "$VISUAL" ]]; then
+  export VISUAL='vim'
+fi
+if [[ -z "$PAGER" ]]; then
+  export PAGER='less'
+fi
+
 export TERM="xterm-256color"
 
 export LC_COLLATE=en_US.UTF-8
@@ -22,6 +42,8 @@ typeset -gU cdpath fpath path
 
 # Zsh search path for executable
 path=(
-  /usr/local/{bin,sbin}
+  $HOME/{,s}bin(N)
+  /opt/{homebrew,local}/{,s}bin(N)
+  /usr/local/{,s}bin(N)
   $path
 )
