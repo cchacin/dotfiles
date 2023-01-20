@@ -25,6 +25,7 @@ antigen bundles <<EOBUNDLES
   httpie
   nvm
   mvn
+  mroth/evalcache
   sudo
   rbenv
   jenv
