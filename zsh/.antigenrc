@@ -11,8 +11,6 @@ antigen bundles <<EOBUNDLES
   brew-cask
   colored-man-pages
   common-aliases
-  docker
-  docker-compose
   dotenv
   unixorn/fzf-zsh-plugin@main
   git
@@ -20,7 +18,6 @@ antigen bundles <<EOBUNDLES
   git-hubflow
   git-remote-branch
   gitignore
-  heroku
   history
   httpie
   nvm

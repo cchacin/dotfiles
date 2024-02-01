@@ -38,14 +38,3 @@ fi
 
 # To customize prompt, run `p10k configure` or edit $HOME/.p10k.zsh.
 [[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh
-
-# Add Jbang to environment
-alias j!=jbang
-export PATH="$HOME/.jbang/bin:$PATH"
-
-# Haskell GHCUP
-export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
-
-if [[ -f /usr/local/opt/asdf/libexec/asdf.sh ]]; then
-  . /usr/local/opt/asdf/libexec/asdf.sh
-fi
