@@ -5,7 +5,6 @@ antigen use oh-my-zsh
 antigen bundles <<EOBUNDLES
   ssh-agent
   gpg-agent
-  autojump
   aws
   brew
   brew-cask
