@@ -7,11 +7,10 @@ antigen bundles <<EOBUNDLES
   gpg-agent
   aws
   brew
-  brew-cask
   colored-man-pages
-  common-aliases
   dotenv
-  unixorn/fzf-zsh-plugin@main
+  eza
+  fzf
   git
   git-extras
   git-hubflow
@@ -26,7 +25,6 @@ antigen bundles <<EOBUNDLES
   rbenv
   jenv
   zsh-users/zsh-syntax-highlighting
-  zdharma/zsh-diff-so-fancy
 EOBUNDLES
 
 # Load the theme.
