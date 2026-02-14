@@ -30,8 +30,6 @@ fi
 # To customize prompt, run `p10k configure` or edit $HOME/.p10k.zsh.
 [[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh
 
-eval "$(zoxide init zsh --cmd cd)"
-
 if [[ -f $HOME/.aliases.sh ]]; then
   source $HOME/.aliases.sh
 fi
@@ -40,48 +38,33 @@ if [[ -f $HOME/.private.sh ]]; then
   source $HOME/.private.sh
 fi
 
-# --- setup fzf theme ---
-fg="#CBE0F0"
-bg="#011628"
-bg_highlight="#143652"
-purple="#B388FF"
-blue="#06BCE4"
-cyan="#2CF9ED"
+# Completion styling
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu no
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
-export FZF_DEFAULT_OPTS="--color=fg:${fg},bg:${bg},hl:${purple},fg+:${fg},bg+:${bg_highlight},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan}"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/cchacin/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
 
-# -- Use fd instead of fzf --
 
-export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+[[ ! -r '/Users/cchacin/.opam/opam-init/init.zsh' ]] || source '/Users/cchacin/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+# END opam configuration
+export HOMEBREW_DOWNLOAD_CONCURRENCY=auto
+export PATH="/Users/cchacin/.local/bin:$PATH"
+eval "$(zoxide init zsh --cmd cd)"
 
-# Use fd (https://github.com/sharkdp/fd) for listing path candidates.
-# - The first argument to the function ($1) is the base path to start traversal
-# - See the source code (completion.{bash,zsh}) for the details.
-_fzf_compgen_path() {
-  fd --hidden --exclude .git . "$1"
-}
+# AsyncAPI CLI Autocomplete
 
-# Use fd to generate the list for directory completion
-_fzf_compgen_dir() {
-  fd --type=d --hidden --exclude .git . "$1"
-}
+ASYNCAPI_AC_ZSH_SETUP_PATH=/Users/cchacin/Library/Caches/@asyncapi/cli/autocomplete/zsh_setup && test -f $ASYNCAPI_AC_ZSH_SETUP_PATH && source $ASYNCAPI_AC_ZSH_SETUP_PATH; # asyncapi autocomplete setup
 
-export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :500 {}'"
-export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
 
-# Advanced customization of fzf options via _fzf_comprun function
-# - The first argument to the function is the name of the command.
-# - You should make sure to pass the rest of the arguments to fzf.
-# _fzf_comprun() {
-#   local command=$1
-#   shift
-
-#   case "$command" in
-#     cd)           fzf --preview 'eza --tree --color=always {} | head -200' "$@" ;;
-#     export|unset) fzf --preview "eval 'echo \$'{}"         "$@" ;;
-#     ssh)          fzf --preview 'dig {}'                   "$@" ;;
-#     *)            fzf --preview "bat -n --color=always --line-range :500 {}" "$@" ;;
-#   esac
-# }

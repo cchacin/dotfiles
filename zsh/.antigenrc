@@ -11,6 +11,8 @@ antigen bundles <<EOBUNDLES
   dotenv
   eza
   fzf
+  Aloxaf/fzf-tab
+  fdellwing/zsh-bat
   git
   git-extras
   git-hubflow
@@ -25,6 +27,7 @@ antigen bundles <<EOBUNDLES
   rbenv
   jenv
   zsh-users/zsh-syntax-highlighting
+  MichaelAquilina/zsh-you-should-use
 EOBUNDLES
 
 # Load the theme.

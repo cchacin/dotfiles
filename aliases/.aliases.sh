@@ -16,7 +16,4 @@ alias mv='mv -i'
 alias vim=nvim
 alias vi=nvim
 
-alias cat="bat --color=always --style=numbers"
-
-alias ls="eza --color=always --long --git --icons=always --no-time --no-user --no-permissions"
-alias lst="eza --tree --level=2"
+zstyle ':omz:plugins:eza' 'git-status' yes
