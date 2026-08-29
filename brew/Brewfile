@@ -149,8 +149,6 @@ brew "git"
 brew "git-delta"
 # Small git utilities
 brew "git-extras"
-# Extensions to follow Vincent Driessen's branching model
-brew "git-flow"
 # Utility to keep git repos fresh
 brew "git-fresh"
 # Git extension for versioning large files
@@ -463,8 +461,6 @@ cask "corretto21"
 cask "corretto8"
 # Utilities designed to make common development tasks easier
 cask "devtoys"
-# Visually compare and merge files
-cask "diffmerge"
 # App to build and share containerised applications and microservices
 cask "docker-desktop"
 cask "dozer"
@@ -496,8 +492,6 @@ cask "iterm2"
 cask "itsycal"
 # Offline AI chat tool
 cask "jan"
-# Standalone Java Decompiler GUI
-cask "jd-gui"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
 # Open-source keystroke visualiser
@@ -514,8 +508,6 @@ cask "logitech-presentation"
 cask "microsoft-auto-update"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
-# Virtual video presentation software
-cask "mmhmm-studio"
 # Silence embarrassing notifications while screensharing
 cask "muzzle"
 # Client-side GUI application for modern database development and operations
@@ -524,8 +516,6 @@ cask "nosql-workbench"
 cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# Retro video game emulation
-cask "openemu"
 # Local-first alternative to Logitech Options+ for HID++ devices
 cask "openlogi"
 # IDE for professional Python development

@@ -1,0 +1,19 @@
+source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
+
+# Set the root name of the plugins files (.txt and .zsh) antidote will use.
+ZSH_PLUGINS=${HOME}/.zsh_plugins
+
+# Ensure the .zsh_plugins.txt file exists so you can add plugins.
+[[ -f ${ZSH_PLUGINS}.txt ]] || touch ${ZSH_PLUGINS}.txt
+
+# Lazy-load antidote from its functions directory.
+fpath=($(brew --prefix)/opt/homebrew/opt/antidote/share/antidote/functions $fpath)
+autoload -Uz antidote
+
+# Generate a new static file whenever .zsh_plugins.txt is updated.
+if [[ ! ${ZSH_PLUGINS}.zsh -nt ${ZSH_PLUGINS}.txt ]]; then
+  antidote bundle <${ZSH_PLUGINS}.txt >|${ZSH_PLUGINS}.zsh
+fi
+
+# Source your static plugins file.
+source ${ZSH_PLUGINS}.zsh
