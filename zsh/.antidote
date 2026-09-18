@@ -1,3 +1,4 @@
+export ANTIDOTE_HOME="$HOME/.config/antidote/cache"
 source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
 
 # Set the root name of the plugins files (.txt and .zsh) antidote will use.
