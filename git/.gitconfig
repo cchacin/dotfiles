@@ -24,6 +24,9 @@
 	tool = diffmerge
 [diff]
 	tool = diffmerge
+  algorithm = histogram
+  colorMoved = default
+  mnemonicPrefix = true
 [difftool "diffmerge"]
 	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
 [mergetool "diffmerge"]

@@ -176,7 +176,7 @@ brew "graphviz"
 # Java-based scripting language
 brew "groovy"
 # Agent multiplexer that lives in your terminal
-brew "herdr", restart_service: :changed
+brew "herdr"
 # HTTP load generator, ApacheBench (ab) replacement
 brew "hey"
 # Improved top (interactive process viewer)
@@ -369,6 +369,10 @@ brew "torsocks"
 brew "tree"
 # Super powered replacement for GNU Stow
 brew "tuckr"
+# Terminal UI OS (Terminal Multiplexer)
+brew "tuios"
+# Fast, keyboard-driven terminal UI for todo.txt
+brew "tuxedo"
 # Source code beautifier
 brew "uncrustify"
 # ODBC 3 connectivity for UNIX
