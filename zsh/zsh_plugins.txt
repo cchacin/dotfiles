@@ -2,6 +2,7 @@ getantidote/use-omz
 mroth/evalcache
 ohmyzsh/ohmyzsh path:lib
 ohmyzsh/ohmyzsh path:plugins/ssh-agent
+ohmyzsh/ohmyzsh path:plugins/1password
 ohmyzsh/ohmyzsh path:plugins/brew kind:defer
 ohmyzsh/ohmyzsh path:plugins/colored-man-pages kind:defer
 ohmyzsh/ohmyzsh path:plugins/dotenv kind:defer

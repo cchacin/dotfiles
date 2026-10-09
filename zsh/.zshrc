@@ -32,3 +32,6 @@ fi
 export HOMEBREW_DOWNLOAD_CONCURRENCY=auto
 export PATH="/Users/cchacin/.local/bin:$PATH"
 eval "$(zoxide init zsh --cmd cd)"
+
+# 1password completion
+eval "$(op completion zsh)"; compdef _op op
