@@ -35,3 +35,6 @@ eval "$(zoxide init zsh --cmd cd)"
 
 # 1password completion
 eval "$(op completion zsh)"; compdef _op op
+
+# mise
+eval "$(mise activate zsh)"
