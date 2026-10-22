@@ -1,1 +1,1 @@
-JAVA_HOME=$(jenv javahome)
+# JAVA_HOME is managed dynamically by mise

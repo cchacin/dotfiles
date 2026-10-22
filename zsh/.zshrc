@@ -38,3 +38,4 @@ eval "$(op completion zsh)"; compdef _op op
 
 # mise
 eval "$(mise activate zsh)"
+fpath+=('/Users/cchacin/.local/share/zsh/site-functions')

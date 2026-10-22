@@ -1,0 +1,71 @@
+[settings]
+legacy_version_file = true
+java.shorthand_vendor = "temurin"
+
+[tools]
+# --- Java Ecosystem (Global LTS) ---
+java = "lts"
+maven = "latest"
+gradle = "latest"
+quarkus = "latest"
+jbang = "latest"
+google-java-format = "latest"
+ant = "latest"
+kotlin = "latest"
+groovy = "latest"
+
+# --- Node.js & JavaScript Ecosystem (Global LTS) ---
+node = "lts"
+yarn = "latest"
+deno = "latest"
+prettier = "latest"
+"npm:@angular/cli" = "latest"
+
+# --- Python Ecosystem (Global LTS) ---
+python = "3.15"
+uv = "latest"
+
+# --- Secondary Runtimes ---
+go = "latest"
+ruby = "latest"
+
+# --- Modern CLI & Navigation Utilities (Phase 6) ---
+bat = "latest"
+eza = "latest"
+fd = "latest"
+fzf = "latest"
+jq = "latest"
+just = "latest"
+zoxide = "latest"
+hyperfine = "latest"
+duf = "latest"
+yazi = "latest"
+zellij = "latest"
+atuin = "latest"
+websocat = "latest"
+oha = "latest"
+
+# --- Phase 7: Git & Terminal TUIs (Planned) ---
+gh = "latest"
+git-lfs = "latest"
+lazygit = "latest"
+lazydocker = "latest"
+lazyssh = "latest"
+jd = "latest"
+worktrunk = "latest"
+
+# --- Phase 8: Cloud, Containers & DevOps (Planned) ---
+awscli = "latest"
+docker-compose = "latest"
+dive = "latest"
+istioctl = "latest"
+stern = "latest"
+sqlc = "latest"
+
+# --- Phase 9: Linters, Formatters & Editors (Planned) ---
+shellcheck = "latest"
+cmake = "latest"
+cloc = "latest"
+kiota = "latest"
+neovim = "latest"
+tmux = "latest"
