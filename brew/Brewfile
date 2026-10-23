@@ -46,12 +46,8 @@ brew "pango"
 brew "chafa"
 # Command-line interactive controller for Kubernetes
 brew "click"
-# Create and run Linux containers using lightweight virtual machines
-brew "container"
 # Manage Apple Container with Docker Compose files
 brew "container-compose"
-# GNU File, Shell, and Text utilities
-brew "coreutils"
 # Tool for browsing source code
 brew "cscope"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -70,14 +66,10 @@ brew "dosbox-x"
 brew "gnutls"
 # GNU Emacs text editor
 brew "emacs"
-# Perl lib for reading and writing EXIF metadata
-brew "exiftool"
 # Library and command-line tool for SSH
 brew "fabric"
 # Identify or delete duplicate files
 brew "fdupes"
-# Play, record, convert, and stream select audio and video codecs
-brew "ffmpeg"
 # Collection of GNU find, xargs, and locate
 brew "findutils"
 # Text editor for your terminal: easy, powerful and fast
@@ -88,8 +80,6 @@ brew "gawk"
 brew "gcc"
 # Java garbage collection visualization tool
 brew "gcviewer"
-# Installer for the general purpose language Haskell
-brew "ghcup"
 # International domain name library
 brew "libidn"
 # OCR (Optical Character Recognition) engine
@@ -110,8 +100,6 @@ brew "git-fresh"
 brew "gitup"
 # Command-line option parsing utility
 brew "gnu-getopt"
-# New GNU portable threads library
-brew "npth"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Generate introspection data for GObject libraries
@@ -120,8 +108,6 @@ brew "gobject-introspection"
 brew "gperftools"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
-# Agent multiplexer that lives in your terminal
-brew "herdr"
 # HTTP load generator, ApacheBench (ab) replacement
 brew "hey"
 # Improved top (interactive process viewer)
@@ -130,8 +116,6 @@ brew "htop"
 brew "httpie"
 # Packet sniffer for displaying and logging HTTP traffic
 brew "httpry"
-# Tools and libraries to manipulate images in select formats
-brew "imagemagick"
 # Load testing and performance measurement application
 brew "jmeter"
 # Command-line JSON pretty-printer
@@ -158,8 +142,6 @@ brew "libxml2"
 brew "libxslt"
 # Rust Ethereum 2.0 Client
 brew "lighthouse"
-# Find what models run on your hardware
-brew "llmfit"
 # Data compression library
 brew "lzlib"
 # Scalable distributed version control system
@@ -168,8 +150,6 @@ brew "mercurial"
 brew "mhash"
 # Terminal-based visual file manager
 brew "midnight-commander"
-# Deep clean and optimize your Mac
-brew "mole"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
 # Improved Nano Syntax Highlighting Files
@@ -180,28 +160,18 @@ brew "newt"
 brew "nmap"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
-# Create, run, and share large language models (LLMs)
-brew "ollama"
-# Protocol buffers (Google's data interchange format)
-brew "protobuf"
-# OCaml package manager
-brew "opam"
+# New GNU portable threads library
+brew "npth"
 # High performance message passing library
 brew "open-mpi"
-# General-purpose speech recognition model
-brew "openai-whisper"
 # TUI to list, browse and run APIs defined with openapi spec
 brew "openapi-tui"
 # ISO-C API and CLI for generating UUIDs
 brew "ossp-uuid"
 # 7-Zip (high compression file archiver) implementation
 brew "p7zip"
-# Swiss-army knife of markup format conversion
-brew "pandoc"
 # Efficient rsh-like utility, for using hosts in parallel
 brew "pdsh"
-# Highly capable, feature-rich programming language
-brew "perl"
 # CLI for Postgres with auto-completion and syntax highlighting
 brew "pgcli"
 # Draw UML diagrams
@@ -210,8 +180,6 @@ brew "plantuml"
 brew "playwright-cli"
 # MCP server for Playwright
 brew "playwright-mcp"
-# PDF rendering library (based on the xpdf-3.0 code base)
-brew "poppler"
 # Python bindings for v6 of Qt
 brew "pyqt"
 # Command-line YAML and XML processor that wraps jq
@@ -220,8 +188,6 @@ brew "python-yq"
 brew "rarian"
 # Reattach process (e.g., tmux) to background
 brew "reattach-to-user-namespace"
-# Persistent key-value database, with built-in net interface
-brew "redis"
 # GNU Make with improved error handling, tracing, and a debugger
 brew "remake"
 # Perl-powered file rename script with many helpful built-ins
@@ -236,8 +202,6 @@ brew "screen"
 brew "slides"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
-# Multi-modal AI tool to extract and summarize content
-brew "summarize"
 # Easiest, most secure way to use WireGuard and 2FA
 brew "tailscale", restart_service: :changed
 # User interface to the TELNET protocol
@@ -260,8 +224,6 @@ brew "torsocks"
 brew "tree"
 # Super powered replacement for GNU Stow
 brew "tuckr"
-# Terminal UI OS (Terminal Multiplexer)
-brew "tuios"
 # Fast, keyboard-driven terminal UI for todo.txt
 brew "tuxedo"
 # Source code beautifier

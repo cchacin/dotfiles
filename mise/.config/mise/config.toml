@@ -1,71 +1,99 @@
 [settings]
 legacy_version_file = true
 java.shorthand_vendor = "temurin"
+experimental = false
 
 [tools]
-# --- Java Ecosystem (Global LTS) ---
-java = "lts"
-maven = "latest"
-gradle = "latest"
-quarkus = "latest"
-jbang = "latest"
-google-java-format = "latest"
-ant = "latest"
-kotlin = "latest"
-groovy = "latest"
-
-# --- Node.js & JavaScript Ecosystem (Global LTS) ---
-node = "lts"
-yarn = "latest"
+# --- Languages & Core Runtimes ---
 deno = "latest"
-prettier = "latest"
-"npm:@angular/cli" = "latest"
-
-# --- Python Ecosystem (Global LTS) ---
-python = "3.15"
-uv = "latest"
-
-# --- Secondary Runtimes ---
+ghcup = "latest"
 go = "latest"
+groovy = "latest"
+java = "lts"
+kotlin = "latest"
+node = "lts"
+opam = "latest"
+perl = "latest"
+python = "3.15"
 ruby = "latest"
 
-# --- Modern CLI & Navigation Utilities (Phase 6) ---
+# --- Java & JVM Ecosystem ---
+ant = "latest"
+google-java-format = "latest"
+gradle = "latest"
+jbang = "latest"
+maven = "latest"
+quarkus = "latest"
+
+# --- Node.js & Web Ecosystem ---
+"npm:@angular/cli" = "latest"
+prettier = "latest"
+yarn = "latest"
+
+# --- Python Tools ---
+uv = "latest"
+
+# --- Cloud, Containers & DevOps ---
+awscli = "latest"
+container = "latest"
+dive = "latest"
+docker-compose = "latest"
+istioctl = "latest"
+lazydocker = "latest"
+stern = "latest"
+
+# --- Databases, Caching & Data Querying ---
+jd = "latest"
+jq = "latest"
+redis = "latest"
+sqlc = "latest"
+
+# --- Modern CLI, Navigation & Terminal Utilities ---
+atuin = "latest"
 bat = "latest"
+coreutils = "latest"
+duf = "latest"
 eza = "latest"
 fd = "latest"
 fzf = "latest"
-jq = "latest"
-just = "latest"
-zoxide = "latest"
 hyperfine = "latest"
-duf = "latest"
-yazi = "latest"
-zellij = "latest"
-atuin = "latest"
-websocat = "latest"
+just = "latest"
 oha = "latest"
+websocat = "latest"
+worktrunk = "latest"
+yazi = "latest"
+zoxide = "latest"
 
-# --- Phase 7: Git & Terminal TUIs (Planned) ---
+# --- Git, Remote & SSH Tools ---
 gh = "latest"
 git-lfs = "latest"
+herdr = "latest"
 lazygit = "latest"
-lazydocker = "latest"
 lazyssh = "latest"
-jd = "latest"
-worktrunk = "latest"
 
-# --- Phase 8: Cloud, Containers & DevOps (Planned) ---
-awscli = "latest"
-docker-compose = "latest"
-dive = "latest"
-istioctl = "latest"
-stern = "latest"
-sqlc = "latest"
-
-# --- Phase 9: Linters, Formatters & Editors (Planned) ---
-shellcheck = "latest"
-cmake = "latest"
-cloc = "latest"
-kiota = "latest"
+# --- Terminal Multiplexers & Editors ---
+"aqua:Gaurav-Gosain/tuios" = "latest"
 neovim = "latest"
 tmux = "latest"
+zellij = "latest"
+
+# --- AI & Local Models ---
+llmfit = "latest"
+ollama = "latest"
+
+# --- Media, Image & Document Processing ---
+exiftool = "latest"
+ffmpeg = "latest"
+imagemagick = "latest"
+pandoc = "latest"
+poppler = "latest"
+
+# --- System, Network & Deep Inspection ---
+cloc = "latest"
+mole = "latest"
+protobuf = "latest"
+
+# --- Linters, Build Systems & Code Generation ---
+cmake = "latest"
+kiota = "latest"
+shellcheck = "latest"
