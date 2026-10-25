@@ -10,14 +10,6 @@ brew "xz"
 brew "boost"
 # Formatter/translator for text files to numerous formats
 brew "asciidoc"
-# YAML Parser
-brew "libyaml"
-# Powerful, clean, object-oriented scripting language
-brew "ruby"
-# Text processor and publishing toolchain for AsciiDoc
-brew "asciidoctor"
-# Record and share terminal sessions
-brew "asciinema"
 # Shell extension to jump to frequently used directories
 brew "autojump"
 # Automatically restart SSH sessions and tunnels
@@ -32,12 +24,12 @@ brew "bchunk"
 brew "bison"
 # Vector graphics library with cross-device output support
 brew "cairo"
-# TIFF library and utilities
-brew "libtiff"
-# Eventually consistent, distributed key-value store
-brew "cassandra"
+# YAML Parser
+brew "libyaml"
 # Create and destroy an Apache Cassandra cluster on localhost
 brew "ccm"
+# TIFF library and utilities
+brew "libtiff"
 # Toolkit for image loading and pixel buffer manipulation
 brew "gdk-pixbuf"
 # Framework for layout and rendering of i18n text
@@ -52,12 +44,8 @@ brew "container-compose"
 brew "cscope"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
-# Secure runtime for JavaScript and TypeScript
-brew "deno"
 # Display user-friendly message boxes from shell scripts
 brew "dialog"
-# Good-lookin' diffs with diff-highlight and more
-brew "diff-so-fancy"
 # DjVu viewer
 brew "djvulibre"
 # DOSBox with accurate emulation and wide testing
@@ -78,8 +66,6 @@ brew "fresh-editor"
 brew "gawk"
 # GNU compiler collection
 brew "gcc"
-# Java garbage collection visualization tool
-brew "gcviewer"
 # International domain name library
 brew "libidn"
 # OCR (Optical Character Recognition) engine
@@ -90,8 +76,6 @@ brew "ghostscript"
 brew "gist"
 # Distributed revision control system
 brew "git"
-# Syntax-highlighting pager for git and diff output
-brew "git-delta"
 # Small git utilities
 brew "git-extras"
 # Utility to keep git repos fresh
@@ -108,22 +92,12 @@ brew "gobject-introspection"
 brew "gperftools"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
-# HTTP load generator, ApacheBench (ab) replacement
-brew "hey"
 # Improved top (interactive process viewer)
 brew "htop"
-# User-friendly cURL replacement (command-line HTTP client)
-brew "httpie"
 # Packet sniffer for displaying and logging HTTP traffic
 brew "httpry"
-# Load testing and performance measurement application
-brew "jmeter"
 # Command-line JSON pretty-printer
 brew "jsonpp"
-# TUI for Jujutsu/jj
-brew "lazyjj"
-# Cross-platform TUI database management tool
-brew "lazysql"
 # Input filter for the pager less
 brew "lesspipe"
 # Portable Foreign Function Interface library
@@ -168,22 +142,16 @@ brew "open-mpi"
 brew "openapi-tui"
 # ISO-C API and CLI for generating UUIDs
 brew "ossp-uuid"
-# 7-Zip (high compression file archiver) implementation
-brew "p7zip"
 # Efficient rsh-like utility, for using hosts in parallel
 brew "pdsh"
 # CLI for Postgres with auto-completion and syntax highlighting
 brew "pgcli"
-# Draw UML diagrams
-brew "plantuml"
 # CLI for Playwright: record/generate code, inspect selectors, take screenshots
 brew "playwright-cli"
 # MCP server for Playwright
 brew "playwright-mcp"
 # Python bindings for v6 of Qt
 brew "pyqt"
-# Command-line YAML and XML processor that wraps jq
-brew "python-yq"
 # Documentation metadata library
 brew "rarian"
 # Reattach process (e.g., tmux) to background
@@ -192,14 +160,8 @@ brew "reattach-to-user-namespace"
 brew "remake"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
-# XSLT and XQuery processor
-brew "saxon"
-# Fast and accurate code counter with complexity and COCOMO estimates
-brew "scc"
 # Terminal multiplexer with VT100/ANSI terminal emulation
 brew "screen"
-# Terminal based presentation tool
-brew "slides"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
 # Easiest, most secure way to use WireGuard and 2FA
@@ -232,10 +194,6 @@ brew "uncrustify"
 brew "unixodbc"
 # Clean C library for processing UTF-8 Unicode data
 brew "utf8proc"
-# Extremely fast Python package installer and resolver, written in Rust
-brew "uv"
-# HTTP load testing tool and library
-brew "vegeta"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
 # Internet file retriever

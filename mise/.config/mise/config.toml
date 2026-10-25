@@ -1,10 +1,11 @@
 [settings]
 legacy_version_file = true
-java.shorthand_vendor = "temurin"
 experimental = false
+idiomatic_version_file_enable_tools = ["java"]
 
 [tools]
 # --- Languages & Core Runtimes ---
+"gem:asciidoctor" = "latest"
 deno = "latest"
 ghcup = "latest"
 go = "latest"
@@ -27,10 +28,14 @@ quarkus = "latest"
 
 # --- Node.js & Web Ecosystem ---
 "npm:@angular/cli" = "latest"
+"npm:diff-so-fancy" = "latest"
+"npm:playwright-mcp" = "latest"
 prettier = "latest"
 yarn = "latest"
 
 # --- Python Tools ---
+"pypi:asciinema" = "latest"
+"pypi:httpie" = "latest"
 uv = "latest"
 
 # --- Cloud, Containers & DevOps ---
@@ -43,12 +48,18 @@ lazydocker = "latest"
 stern = "latest"
 
 # --- Databases, Caching & Data Querying ---
+"github:jorgerojas26/lazysql" = "latest"
 jd = "latest"
 jq = "latest"
 redis = "latest"
 sqlc = "latest"
+yq = "latest"
 
 # --- Modern CLI, Navigation & Terminal Utilities ---
+7zip = "latest"
+"github:boyter/scc" = "latest"
+"github:tsenart/vegeta" = "latest"
+"go:github.com/rakyll/hey" = "latest"
 atuin = "latest"
 bat = "latest"
 coreutils = "latest"
@@ -65,7 +76,10 @@ yazi = "latest"
 zoxide = "latest"
 
 # --- Git, Remote & SSH Tools ---
+delta = "latest"
 gh = "latest"
+"github:Cretezy/lazyjj" = "latest"
+"github:Yakitrak/obsidian-cli" = "latest"
 git-lfs = "latest"
 herdr = "latest"
 lazygit = "latest"
@@ -73,6 +87,7 @@ lazyssh = "latest"
 
 # --- Terminal Multiplexers & Editors ---
 "aqua:Gaurav-Gosain/tuios" = "latest"
+"github:maaslalani/slides" = "latest"
 neovim = "latest"
 tmux = "latest"
 zellij = "latest"
