@@ -1,36 +1,10 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "title_bar": {
-    "show_sign_in": false
-  },
-  "collaboration_panel": {
-    "button": false
-  },
+  "$schema": "https://zed.dev/schema.json",
   "base_keymap": "JetBrains",
-  "project_panel": {
-    "dock": "left"
-  },
-  "proxy": "",
-  "terminal": {
-    "font_family": "JetBrainsMono Nerd Font"
-  },
-  "disable_ai": true,
-  "autosave": {
-    "after_delay": {
-      "milliseconds": 1000
-    }
-  },
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false,
-    "anthropic_retention": false
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte - No Italics",
+    "dark": "Catppuccin Frappé - No Italics"
   },
   "icon_theme": {
     "mode": "system",
@@ -39,9 +13,64 @@
   },
   "ui_font_size": 16,
   "buffer_font_size": 18.0,
-  "theme": {
-    "mode": "system",
-    "light": "Catppuccin Latte - No Italics",
-    "dark": "Catppuccin Frappé - No Italics",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_line_height": "comfortable",
+  "terminal": {
+    "font_family": "JetBrainsMono Nerd Font"
   },
+  "title_bar": {
+    "show_sign_in": false,
+    "show_user_picture": false,
+    "show_user_menu": false,
+    "show_onboarding_banner": false
+  },
+  "tab_bar": {
+    "show_nav_history_buttons": false
+  },
+  "tabs": {
+    "git_status": true,
+    "show_close_button": "hover"
+  },
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": false,
+    "selections_menu": false
+  },
+  "project_panel": {
+    "dock": "left",
+    "hide_gitignore": true,
+    "auto_fold_dirs": true,
+    "auto_reveal_entries": true,
+    "scrollbar": {
+      "show": "never"
+    }
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "agent": {
+    "button": false
+  },
+  "disable_ai": true,
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "show_wrap_guides": false,
+  "cursor_blink": false,
+  "current_line_highlight": "line",
+  "scrollbar": {
+    "show": "auto",
+    "axes": {
+      "horizontal": false
+    }
+  },
+  "remove_trailing_whitespace_on_save": true,
+  "ensure_final_newline_on_save": true,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+    "anthropic_retention": false
+  }
 }
