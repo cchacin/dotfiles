@@ -219,8 +219,6 @@ cask "android-file-transfer"
 cask "antigravity-cli"
 # Local-first and end-to-end encrypted notes app
 cask "anytype"
-# Chromium based browser
-cask "arc"
 # Multi-track audio editor and recorder
 cask "audacity"
 # Tool to flash OS images to SD cards & USB drives
