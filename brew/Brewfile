@@ -80,8 +80,6 @@ brew "git"
 brew "git-extras"
 # Utility to keep git repos fresh
 brew "git-fresh"
-# Update multiple git repositories at once
-brew "gitup"
 # Command-line option parsing utility
 brew "gnu-getopt"
 # Package compiler and linker metadata toolkit
@@ -144,8 +142,6 @@ brew "openapi-tui"
 brew "ossp-uuid"
 # Efficient rsh-like utility, for using hosts in parallel
 brew "pdsh"
-# CLI for Postgres with auto-completion and syntax highlighting
-brew "pgcli"
 # CLI for Playwright: record/generate code, inspect selectors, take screenshots
 brew "playwright-cli"
 # MCP server for Playwright
@@ -172,8 +168,6 @@ brew "telnet"
 brew "terminal-notifier"
 # Enables extra languages support for Tesseract
 brew "tesseract-lang"
-# Programmatically correct mistyped console commands
-brew "thefuck"
 # Granddaddy of HTML tools, with support for modern standards
 brew "tidy-html5"
 # Minimal, todo.txt-focused editor
