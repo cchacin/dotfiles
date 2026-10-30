@@ -1,5 +1,6 @@
 {
   "$schema": "https://zed.dev/schema.json",
+  "cli_default_open_behavior": "new_window",
   "base_keymap": "JetBrains",
   "theme": {
     "mode": "system",
