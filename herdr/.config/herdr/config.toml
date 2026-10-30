@@ -1,8 +1,10 @@
 onboarding = false
 
 [theme]
-name = "catppuccin-frappe"
-auto_switch = false
+name = "catppuccin"
+auto_switch = true
+light_name = "catppuccin-latte"
+dark_name = "catppuccin"
 
 [ui]
 agent_panel_sort = "priority"
