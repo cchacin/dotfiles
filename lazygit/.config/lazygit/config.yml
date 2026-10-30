@@ -1,0 +1,16 @@
+# ~/.config/lazygit/config.yml
+
+gui:
+  showIcons: true
+  sidePanels:
+    - [files, worktrees]
+    - [commits, branches, stash]
+  showCommandLog: false
+git:
+  diffRenderers:
+    - colorArg: always
+      command: diff-so-fancy
+  commit:
+    signOff: false
+quitOnTopLevelReturn: true
+disableStartupPopups: true
