@@ -40,3 +40,6 @@ eval "$(mise activate zsh)"
 fpath+=('/Users/cchacin/.local/share/zsh/site-functions')
 
 eval "$(zoxide init zsh --cmd cd)"
+
+# herdr
+source <(herdr completion zsh)
