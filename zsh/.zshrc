@@ -1,6 +1,4 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of $HOME/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -9,43 +7,57 @@ fi
 [[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh
 
 export HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_DOWNLOAD_CONCURRENCY=auto
+export PATH="${HOME}/.local/bin:${PATH}"
 
-source $HOME/.antidote
+# Antidote plugin bundle (loads plugins including mroth/evalcache)
+source "$HOME/.antidote"
 
-_evalcache zoxide init zsh --cmd cd
-
-if [[ -f $HOME/.aliases.sh ]]; then
-  source $HOME/.aliases.sh
+# Initialize completion system if not already initialized
+autoload -Uz compinit
+if [[ -n ${ZDOTDIR:-$HOME}/.zcompdump(#qN.m+1) ]]; then
+  compinit
+else
+  compinit -C
 fi
 
-if [[ -f $HOME/.private.sh ]]; then
-  source $HOME/.private.sh
+# Initialize zoxide (cached via evalcache if available)
+if type _evalcache >/dev/null 2>&1; then
+  _evalcache zoxide init zsh --cmd cd
+elif command -v zoxide >/dev/null 2>&1; then
+  eval "$(zoxide init zsh --cmd cd)"
+fi
+
+if [[ -f "$HOME/.aliases.sh" ]]; then
+  source "$HOME/.aliases.sh"
+fi
+
+if [[ -f "$HOME/.private.sh" ]]; then
+  source "$HOME/.private.sh"
 fi
 
 # BEGIN opam configuration
-# This is useful if you're using opam as it adds:
-#   - the correct directories to the PATH
-#   - auto-completion for the opam binary
-# This section can be safely removed at any time if needed.
-[[ ! -r '/Users/cchacin/.opam/opam-init/init.zsh' ]] || source '/Users/cchacin/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+[[ ! -r "${HOME}/.opam/opam-init/init.zsh" ]] || source "${HOME}/.opam/opam-init/init.zsh" > /dev/null 2>&1
 # END opam configuration
-export HOMEBREW_DOWNLOAD_CONCURRENCY=auto
-export PATH="/Users/cchacin/.local/bin:$PATH"
 
-# 1password completion
-eval "$(op completion zsh)"; compdef _op op
+# 1Password CLI completion
+if command -v op >/dev/null 2>&1; then
+  eval "$(op completion zsh)"
+  compdef _op op 2>/dev/null || true
+fi
 
 # mise
-eval "$(mise activate zsh)"
-fpath+=('/Users/cchacin/.local/share/zsh/site-functions')
+if command -v mise >/dev/null 2>&1; then
+  eval "$(mise activate zsh)"
+  fpath+=("${HOME}/.local/share/zsh/site-functions")
+fi
 
-eval "$(zoxide init zsh --cmd cd)"
-
-# herdr
-source <(herdr completion zsh)
+# Herdr completion
+if command -v herdr >/dev/null 2>&1; then
+  source <(herdr completion zsh)
+fi
 
 # Local machine overrides
 if [[ -f "$HOME/.zshrc.local" ]]; then
   source "$HOME/.zshrc.local"
 fi
-
