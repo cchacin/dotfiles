@@ -137,7 +137,7 @@ set -e
 echo "==> Setting up Herdr <-> Pi integration..."
 herdr integration install pi
 
-# 2. Herdr agent skill
+# 2. Herdr agent skill (dynamically generated from installed herdr binary)
 echo "==> Generating Herdr agent skill in ~/.agents/skills/herdr..."
 mkdir -p "$HOME/.agents/skills/herdr"
 herdr --skill > "$HOME/.agents/skills/herdr/SKILL.md"
