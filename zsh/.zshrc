@@ -52,10 +52,9 @@ if command -v mise >/dev/null 2>&1; then
   fpath+=("${HOME}/.local/share/zsh/site-functions")
 fi
 
-# Herdr completion
-if command -v herdr >/dev/null 2>&1; then
-  source <(herdr completion zsh)
-fi
+# Herdr & Zsh integration (handled dynamically by robbyrussell/herdr-ohmyzsh)
+export HERDR_OMZ_DEFAULT_AGENT="pi"
+export HERDR_OMZ_THRESHOLD=10
 
 # Local machine overrides
 if [[ -f "$HOME/.zshrc.local" ]]; then

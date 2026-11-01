@@ -18,3 +18,4 @@ zsh-users/zsh-autosuggestions kind:defer
 romkatv/powerlevel10k
 romkatv/zsh-bench kind:path
 zsh-users/zsh-completions kind:fpath path:src
+robbyrussell/herdr-ohmyzsh

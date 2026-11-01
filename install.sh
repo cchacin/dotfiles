@@ -101,8 +101,17 @@ if command -v mise >/dev/null 2>&1; then
   mise run setup:agent
 fi
 
-# 8. Set default login shell to Zsh if available
-if command -v zsh >/dev/null 2>&1; then
+# 8. Set default login shell to Homebrew Zsh on macOS (if available) or system zsh
+if [ "$(uname)" = "Darwin" ] && [ -x "/opt/homebrew/bin/zsh" ]; then
+  BREW_ZSH="/opt/homebrew/bin/zsh"
+  if ! grep -qxF "$BREW_ZSH" /etc/shells 2>/dev/null; then
+    echo "  ==> ℹ️  Note: To set Homebrew Zsh as default login shell, run:"
+    echo "      echo '$BREW_ZSH' | sudo tee -a /etc/shells && chsh -s '$BREW_ZSH'"
+  elif [ "${SHELL:-}" != "$BREW_ZSH" ]; then
+    echo "  ==> 🚧 Setting login shell to ${BREW_ZSH}..."
+    chsh -s "$BREW_ZSH" 2>/dev/null || true
+  fi
+elif command -v zsh >/dev/null 2>&1; then
   ZSH_PATH="$(command -v zsh)"
   if [ "${SHELL:-}" != "$ZSH_PATH" ] && [ "$(uname)" = "Darwin" ]; then
     echo "  ==> 🚧 Setting default shell to ${ZSH_PATH}..."
