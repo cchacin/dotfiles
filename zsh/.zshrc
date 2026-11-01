@@ -43,3 +43,9 @@ eval "$(zoxide init zsh --cmd cd)"
 
 # herdr
 source <(herdr completion zsh)
+
+# Local machine overrides
+if [[ -f "$HOME/.zshrc.local" ]]; then
+  source "$HOME/.zshrc.local"
+fi
+

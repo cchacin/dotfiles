@@ -12,3 +12,17 @@ Brewfile.lock.json
 
 # MacOS
 .DS_Store
+
+# Local overrides & backups
+*.local
+*.backup
+*.backup.*
+*.bak
+
+# Local agent scratch & issues
+.scratch/
+
+# Compiled & temporary artifacts
+*.zwc
+*.zwc.old
+Main.java

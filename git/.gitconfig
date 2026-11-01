@@ -18,6 +18,8 @@
 	email = cchacin@gmail.com
 	useconfigonly = true
 	signingkey = 2DBE2879
+[include]
+	path = ~/.gitconfig.local
 [includeIf "gitdir:~/workplace/"]
   path = .gitconfig-work
 [merge]

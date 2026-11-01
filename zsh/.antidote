@@ -1,14 +1,14 @@
-export ANTIDOTE_HOME=${HOME}/.config/antidote/cache
-source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
+export ANTIDOTE_HOME="${HOME}/.config/antidote/cache"
 
-# Set the root name of the plugins files (.txt and .zsh) antidote will use.
-ZSH_PLUGINS=${HOME}/.zsh_plugins
+# Discover antidote location (Homebrew or ~/.antidote clone)
+if command -v brew >/dev/null 2>&1 && [ -f "$(brew --prefix)/opt/antidote/share/antidote/antidote.zsh" ]; then
+  source "$(brew --prefix)/opt/antidote/share/antidote/antidote.zsh"
+  fpath=("$(brew --prefix)/opt/antidote/share/antidote/functions" $fpath)
+elif [ -f "${HOME}/.antidote/antidote.zsh" ]; then
+  source "${HOME}/.antidote/antidote.zsh"
+  fpath=("${HOME}/.antidote/functions" $fpath)
+fi
 
-# Ensure the .zsh_plugins.txt file exists so you can add plugins.
-[[ -f ${ZSH_PLUGINS}.txt ]] || touch ${ZSH_PLUGINS}.txt
-
-# Lazy-load antidote from its functions directory.
-fpath=($(brew --prefix)/opt/homebrew/opt/antidote/share/antidote/functions $fpath)
 autoload -Uz antidote
 
 # Generate a new static file whenever .zsh_plugins.txt is updated.

@@ -8,18 +8,41 @@ echo " | (_| | (_) | ||__|  _| | |  __/\__ \\"
 echo "  \__,_|\___/ \__| |_| |_|_|\___||___/"
 echo ""
 
-echo "==> 🚧 Starting..."
+echo "==> 🚧 Starting dotfiles bootstrap..."
 
 DOTFILES="${HOME}/dotfiles"
 
-# Check required base tools
-for cmd in git stow; do
-  if ! command -v "$cmd" >/dev/null 2>&1; then
-    echo "==> ❌ Error: '$cmd' is required but not installed." >&2
-    exit 1
+# 1. Ensure Homebrew is installed on macOS
+if [ "$(uname)" = "Darwin" ]; then
+  if ! command -v brew >/dev/null 2>&1; then
+    echo "  ==> 🚧 Installing Homebrew..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    if [ -d "/opt/homebrew/bin" ]; then
+      eval "$(/opt/homebrew/bin/brew shellenv)"
+    fi
   fi
-done
 
+  # Install dependencies via Homebrew
+  if [ -f "${DOTFILES}/brew/Brewfile" ]; then
+    echo "  ==> 🚧 Running Brewfile..."
+    brew bundle --file="${DOTFILES}/brew/Brewfile" || true
+  fi
+fi
+
+# 2. Ensure Mise is installed
+if ! command -v mise >/dev/null 2>&1; then
+  echo "  ==> 🚧 Installing mise..."
+  curl https://mise.run | sh
+  export PATH="${HOME}/.local/bin:${PATH}"
+fi
+
+# 3. Ensure Stow is available
+if ! command -v stow >/dev/null 2>&1; then
+  echo "  ==> ❌ Error: 'stow' is required but not installed." >&2
+  exit 1
+fi
+
+# 4. Clone or update repository
 if [ -d "${DOTFILES}" ]; then
   echo "  ==> ✅ Dotfiles already present"
   echo "  ==> 🚧 Fetching and pulling latest changes..."
@@ -31,6 +54,35 @@ fi
 
 cd "${DOTFILES}"
 
+# 5. Collision backup: Back up non-symlink target files that would block stow
+BACKUP_DIR="${HOME}/.dotfiles.backup.$(date +%Y%m%d%H%M%S)"
+BACKUP_CREATED=0
+
+for dir in */; do
+  pkg="${dir%/}"
+  case "$pkg" in
+    .git|.github|docs|scripts) continue ;;
+  esac
+
+  # Find regular files inside package and check if a regular non-symlink file exists at $HOME
+  find "$pkg" -type f | while IFS= read -r src_file; do
+    rel_path="${src_file#"$pkg"/}"
+    target_file="${HOME}/${rel_path}"
+
+    if [ -f "$target_file" ] && [ ! -L "$target_file" ]; then
+      if [ "$BACKUP_CREATED" -eq 0 ]; then
+        echo "  ==> ⚠️  Target collision detected. Backing up existing files to ${BACKUP_DIR}..."
+        mkdir -p "${BACKUP_DIR}"
+        BACKUP_CREATED=1
+      fi
+      mkdir -p "$(dirname "${BACKUP_DIR}/${rel_path}")"
+      mv "$target_file" "${BACKUP_DIR}/${rel_path}"
+      echo "    ==> Backed up ${rel_path}"
+    fi
+  done
+done
+
+# 6. Link packages using Stow
 echo "  ==> 🚧 Linking Dotfiles to ~..."
 for dir in */; do
   pkg="${dir%/}"
@@ -41,6 +93,7 @@ for dir in */; do
   echo "    ==> ✅ Linked ${pkg}"
 done
 
+# 7. Install developer tools and agent setup via Mise
 if command -v mise >/dev/null 2>&1; then
   echo "  ==> 🚧 Installing tools via mise..."
   mise install
@@ -48,4 +101,13 @@ if command -v mise >/dev/null 2>&1; then
   mise run setup:agent
 fi
 
-echo "==> ✅ Done."
+# 8. Set default login shell to Zsh if available
+if command -v zsh >/dev/null 2>&1; then
+  ZSH_PATH="$(command -v zsh)"
+  if [ "${SHELL:-}" != "$ZSH_PATH" ] && [ "$(uname)" = "Darwin" ]; then
+    echo "  ==> 🚧 Setting default shell to ${ZSH_PATH}..."
+    chsh -s "$ZSH_PATH" 2>/dev/null || true
+  fi
+fi
+
+echo "==> ✅ Bootstrap completed successfully."
