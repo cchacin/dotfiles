@@ -23,15 +23,10 @@
 [merge]
 	tool = diffmerge
 [diff]
-	tool = diffmerge
-  algorithm = histogram
-  colorMoved = default
-  mnemonicPrefix = true
-[difftool "diffmerge"]
-	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
-[mergetool "diffmerge"]
-	cmd = "diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
-	trustExitCode = true
+	tool = hunk
+  	algorithm = histogram
+   	colorMoved = default
+    mnemonicPrefix = true
 [filter "hawser"]
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
@@ -58,12 +53,17 @@
 [init]
 	defaultBranch = main
 [credential "https://github.com"]
-	helper = 
 	helper = !/opt/homebrew/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-	helper = 
 	helper = !/opt/homebrew/bin/gh auth git-credential
 [column]
 	ui = auto
 [branch]
 	sort = -committerdate
+[difftool "hunk"]
+	cmd = hunk difftool \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+[difftool]
+	prompt = false
+[alias]
+	hdiff = -c core.pager=\"hunk pager\" diff
+	hshow = -c core.pager=\"hunk pager\" show

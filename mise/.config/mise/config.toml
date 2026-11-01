@@ -84,6 +84,7 @@ git-lfs = "latest"
 herdr = "latest"
 lazygit = "latest"
 lazyssh = "latest"
+hunk = "latest"
 
 # --- Terminal Multiplexers & Editors ---
 "aqua:Gaurav-Gosain/tuios" = "latest"
