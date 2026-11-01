@@ -96,6 +96,7 @@ zellij = "latest"
 # --- AI & Local Models ---
 llmfit = "latest"
 ollama = "latest"
+"npm:skills" = "latest"
 
 # --- Media, Image & Document Processing ---
 exiftool = "latest"
@@ -116,3 +117,30 @@ shellcheck = "latest"
 jujutsu = "latest"
 jujutsu-ui = "latest"
 pi = "latest"
+
+[tasks."skills:sync"]
+description = "Sync mattpocock skills for pi"
+run = "skills add mattpocock/skills --agent pi --global --all -y"
+
+[tasks."skills:update"]
+description = "Update all installed global agent skills"
+run = "skills update -g -y"
+
+[tasks."setup:agent"]
+description = "Bootstrap Herdr integration, skills, and default Pi settings"
+depends = ["skills:sync"]
+run = """
+#!/usr/bin/env bash
+set -e
+
+# 1. Herdr <-> Pi integration hook
+echo "==> Setting up Herdr <-> Pi integration..."
+herdr integration install pi
+
+# 2. Herdr agent skill
+echo "==> Generating Herdr agent skill in ~/.agents/skills/herdr..."
+mkdir -p "$HOME/.agents/skills/herdr"
+herdr --skill > "$HOME/.agents/skills/herdr/SKILL.md"
+
+echo "==> Agent environment ready."
+"""
