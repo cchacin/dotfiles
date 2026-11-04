@@ -57,7 +57,7 @@ hdev() {
   # Sanitize label for agent name: lowercase, letters/numbers/hyphen only
   local safe_label
   safe_label="$(echo "$label" | tr '[:upper:]' '[:lower:]' | tr -cs 'a-z0-9_-' '-' | sed 's/^-//;s/-$//')"
-  local agent_name="pi-${safe_label:-agent}"
+  local agent_name="omp-${safe_label:-agent}"
 
   # 1. Create the workspace (Tab 1 is created automatically as root)
   local ws_json
@@ -73,20 +73,20 @@ hdev() {
   fi
 
   # Label Tab 1: agent
-  herdr tab rename "$root_tab_id" "agent" >/dev/null 2>&1
+  herdr tab rename "$root_tab_id" "Agent" >/dev/null 2>&1
 
-  # Launch Pi in Tab 1
-  herdr agent start "$agent_name" --kind pi --pane "$root_pane_id" >/dev/null 2>&1 &
+  # Launch OMP in Tab 1
+  herdr agent start "$agent_name" --kind omp --pane "$root_pane_id" >/dev/null 2>&1 &
 
   # 2. Create Tab 2: shell
-  herdr tab create --workspace "$ws_id" --cwd "$target_dir" --label "shell" --no-focus >/dev/null 2>&1
+  herdr tab create --workspace "$ws_id" --cwd "$target_dir" --label "Shell" --no-focus >/dev/null 2>&1
 
   # 3. Create Tab 3: server
-  herdr tab create --workspace "$ws_id" --cwd "$target_dir" --label "server" --no-focus >/dev/null 2>&1
+  herdr tab create --workspace "$ws_id" --cwd "$target_dir" --label "Server" --no-focus >/dev/null 2>&1
 
   # 4. Create Tab 4: git (launch lazygit if installed)
   local tab4_json tab4_pane_id
-  tab4_json="$(herdr tab create --workspace "$ws_id" --cwd "$target_dir" --label "git" --no-focus)"
+  tab4_json="$(herdr tab create --workspace "$ws_id" --cwd "$target_dir" --label "Git" --no-focus)"
   tab4_pane_id="$(echo "$tab4_json" | jq -r '.result.root_pane.pane_id // empty')"
 
   if command -v lazygit >/dev/null 2>&1 && [ -n "$tab4_pane_id" ]; then
