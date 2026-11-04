@@ -117,6 +117,7 @@ shellcheck = "latest"
 jujutsu = "latest"
 jujutsu-ui = "latest"
 pi = "latest"
+oh-my-pi = { version = "latest", rename_exe = "omp" }
 
 [tasks."skills:sync"]
 description = "Sync mattpocock skills for pi"
