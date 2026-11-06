@@ -11,7 +11,9 @@ export HOMEBREW_DOWNLOAD_CONCURRENCY=auto
 export PATH="${HOME}/.local/bin:${PATH}"
 
 # Antidote plugin bundle (loads plugins including mroth/evalcache)
-source "$HOME/.antidote"
+if [[ -f "$HOME/.antidote" ]]; then
+  source "$HOME/.antidote"
+fi
 
 # Initialize completion system if not already initialized
 autoload -Uz compinit
@@ -40,14 +42,24 @@ fi
 [[ ! -r "${HOME}/.opam/opam-init/init.zsh" ]] || source "${HOME}/.opam/opam-init/init.zsh" > /dev/null 2>&1
 # END opam configuration
 
-# 1Password CLI completion
-if command -v op >/dev/null 2>&1; then
+# 1Password CLI completion (cached via evalcache if available)
+if type _evalcache >/dev/null 2>&1; then
+  if command -v op >/dev/null 2>&1; then
+    _evalcache op completion zsh
+    compdef _op op 2>/dev/null || true
+  fi
+elif command -v op >/dev/null 2>&1; then
   eval "$(op completion zsh)"
   compdef _op op 2>/dev/null || true
 fi
 
-# mise
-if command -v mise >/dev/null 2>&1; then
+# mise (cached via evalcache if available)
+if type _evalcache >/dev/null 2>&1; then
+  if command -v mise >/dev/null 2>&1; then
+    _evalcache mise activate zsh
+    fpath+=("${HOME}/.local/share/zsh/site-functions")
+  fi
+elif command -v mise >/dev/null 2>&1; then
   eval "$(mise activate zsh)"
   fpath+=("${HOME}/.local/share/zsh/site-functions")
 fi
