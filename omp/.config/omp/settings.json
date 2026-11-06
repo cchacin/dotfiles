@@ -1,5 +1,19 @@
 {
   "startup": {
     "showSplash": false
+  },
+  "tools": {
+    "approvalMode": "write"
+  },
+  "prewalk": {
+    "enabled": true
+  },
+  "thinking": "medium",
+  "limits": {
+    "warnCost": "$2.00",
+    "maxCost": "$5.00"
+  },
+  "compaction": {
+    "thresholdPercent": 40
   }
 }
