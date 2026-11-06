@@ -2,6 +2,7 @@
 # https://ghostty.zerebos.com
 
 font-size = 24
+font-family = "JetBrainsMono Nerd Font"
 theme = dark:"Catppuccin Frappe",light:"Catppuccin Latte"
 background-opacity = 0.8
 background-blur = 15
