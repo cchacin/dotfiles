@@ -118,6 +118,7 @@ jujutsu = "latest"
 jujutsu-ui = "latest"
 pi = "latest"
 oh-my-pi = { version = "latest", rename_exe = "omp" }
+"aqua:CrociDB/bulletty" = "latest"
 
 [tasks."skills:sync"]
 description = "Sync mattpocock skills for pi"
