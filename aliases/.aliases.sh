@@ -114,10 +114,10 @@ hdev() {
     wait
 
     # Send idle/waiting prompts to each sub-agent in parallel
-    herdr agent prompt "${agent_name}-sub1" "You are the Performance Sub-Agent. Your focus area is improving measurable performance bottlenecks. DO NOT make any edits or start working yet. Acknowledge your role, enter an idle state, and wait for explicit task delegation from the Lead Agent." &
-    [ -n "$p2_id" ] && herdr agent prompt "${agent_name}-sub2" "You are the Bug Sub-Agent. Your focus area is fixing real bugs affecting functionality normal usage, with no speculative edge-case hardening or bikeshedding. DO NOT make any edits or start working yet. Acknowledge your role, enter an idle state, and wait for explicit task delegation from the Lead Agent." &
-    [ -n "$p3_id" ] && herdr agent prompt "${agent_name}-sub3" "You are the Architecture Sub-Agent. Your focus area is simplifying architecture, removing duplication and unnecessary abstractions, preferring elegance and deletion over more machinery. DO NOT make any edits or start working yet. Acknowledge your role, enter an idle state, and wait for explicit task delegation from the Lead Agent." &
-    [ -n "$p4_id" ] && herdr agent prompt "${agent_name}-sub4" "You are the Testing Sub-Agent. Your focus area is focusing on a TDD approach to write and run test cases. DO NOT make any edits or start working yet. Acknowledge your role, enter an idle state, and wait for explicit task delegation from the Lead Agent." &
+    herdr agent prompt "${agent_name}-sub1" "You are the Performance Sub-Agent. Your focus area is improving measurable performance bottlenecks. DO NOT make any edits or start working yet. Acknowledge your role, enter an idle state, and wait for explicit task delegation from the Lead Agent." && herdr agent send-keys "${agent_name}-sub1" Enter &
+    [ -n "$p2_id" ] && herdr agent prompt "${agent_name}-sub2" "You are the Bug Sub-Agent. Your focus area is fixing real bugs affecting functionality normal usage, with no speculative edge-case hardening or bikeshedding. DO NOT make any edits or start working yet. Acknowledge your role, enter an idle state, and wait for explicit task delegation from the Lead Agent." && herdr agent send-keys "${agent_name}-sub2" Enter &
+    [ -n "$p3_id" ] && herdr agent prompt "${agent_name}-sub3" "You are the Architecture Sub-Agent. Your focus area is simplifying architecture, removing duplication and unnecessary abstractions, preferring elegance and deletion over more machinery. DO NOT make any edits or start working yet. Acknowledge your role, enter an idle state, and wait for explicit task delegation from the Lead Agent." && herdr agent send-keys "${agent_name}-sub3" Enter &
+    [ -n "$p4_id" ] && herdr agent prompt "${agent_name}-sub4" "You are the Testing Sub-Agent. Your focus area is focusing on a TDD approach to write and run test cases. DO NOT make any edits or start working yet. Acknowledge your role, enter an idle state, and wait for explicit task delegation from the Lead Agent." && herdr agent send-keys "${agent_name}-sub4" Enter &
   fi
 
   # Instruct Lead OMP Agent to utilize and delegate to the 4 sub-agents
@@ -127,7 +127,8 @@ hdev() {
 - ${agent_name}-sub3 (bottom-left) [Architecture]: Simplify architecture, remove duplication and unnnecessary abstractions; prefer elegance and deletion over more machinery.
 - ${agent_name}-sub4 (bottom-right) [Testing]: Focus on TDD approach to write and run test cases.
 All sub-agents are running on gemini-2.5-flash-lite and are initialized in an IDLE state waiting for your delegation.
-CRITICAL: DO NOT formulate plans or assign tasks to sub-agents yet. Acknowledge your role, enter an IDLE state, and WAIT for the human user to provide instructions, goals, or tasks before taking any action or delegating work." &
+CRITICAL: You MUST ALWAYS delegate specific domain tasks (Performance, Bugs, Architecture, Testing) to your specialized sub-agents. Any background tasks, servers, or long-running processes you execute MUST be spawned in dedicated Herdr panes.
+DO NOT formulate plans or assign tasks to sub-agents yet. Acknowledge your role, enter an idle state, and WAIT for the human user to provide instructions, goals, or tasks before taking any action or delegating work." && herdr agent send-keys "$agent_name" Enter &
   wait
 
   # 3. Create Tab 3: server
