@@ -1,7 +1,7 @@
 # homebrew
 Brewfile.lock.json
 
-# zsh
+# ZSH Compiled & temporary artifacts
 *.zwc
 *.old
 
@@ -21,8 +21,4 @@ Brewfile.lock.json
 
 # Local agent scratch & issues
 .scratch/
-
-# Compiled & temporary artifacts
-*.zwc
-*.zwc.old
 Main.java
