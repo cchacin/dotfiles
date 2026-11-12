@@ -52,7 +52,7 @@ cd ~/dotfiles
 
 ### AI Coding Agents & Skills
 - **Pi**: Coding agent harness configured with Google Gemini models.
-- **Herdr Integration**: Live agent detection and pane coordination via `herdr integration install pi`.
+- **Herdr Integration**: Live agent detection and pane coordination via `herdr integration install omp`.
 - **Engineering Skills**: 38+ composable engineering skills from [mattpocock/skills][9] installed under `~/.agents/skills/`.
   - Update all agent skills anytime with: `mise run skills:update`
 

@@ -135,9 +135,9 @@ run = """
 #!/usr/bin/env bash
 set -e
 
-# 1. Herdr <-> Pi integration hook
-echo "==> Setting up Herdr <-> Pi integration..."
-herdr integration install pi
+# 1. Herdr <-> OMP integration hook
+echo "==> Setting up Herdr <-> OMP integration..."
+herdr integration install omp
 
 # 2. Herdr agent skill (dynamically generated from installed herdr binary)
 echo "==> Generating Herdr agent skill in ~/.agents/skills/herdr..."
