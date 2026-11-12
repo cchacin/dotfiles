@@ -66,7 +66,7 @@ hdev() {
   # Sanitize label for agent name: lowercase, letters/numbers/hyphen only
   local safe_label
   safe_label="$(echo "$label" | tr '[:upper:]' '[:lower:]' | tr -cs 'a-z0-9_-' '-' | sed 's/^-//;s/-$//')"
-  local agent_name="omp-${safe_label:-agent}"
+  local agent_name
 
   # 1. Create the workspace (Tab 1 is created automatically as root)
   local ws_json
@@ -81,10 +81,15 @@ hdev() {
     return 1
   fi
 
+  local ws_suffix="${ws_id:0:8}"
+  ws_suffix="${ws_suffix:-$$}"
+  agent_name="omp-${safe_label:-agent}-${ws_suffix}"
   herdr workspace focus "$ws_id" >/dev/null 2>&1
 
   # Label Tab 1: agent
   herdr tab rename "$root_tab_id" "Lead Agent" >/dev/null 2>&1
+  # Wait for root pane shell prompt to be ready
+  herdr pane wait-output "$root_pane_id" --regex ".*" --timeout 5000 >/dev/null 2>&1 || sleep 1
   # Launch OMP in Tab 1
   herdr agent start "$agent_name" --kind omp --pane "$root_pane_id" --timeout 30000 &
 
