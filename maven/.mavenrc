@@ -1,1 +1,2 @@
 # JAVA_HOME is managed dynamically by mise
+export MAVEN_OPTS="-Xmx4g -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -Dfile.encoding=UTF-8 -Djava.awt.headless=true"

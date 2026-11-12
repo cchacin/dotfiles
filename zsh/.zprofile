@@ -48,3 +48,7 @@ path=(
   $HOME/.ghcup/bin/
   $path
 )
+# Load Maven configuration (.mavenrc) if present
+if [ -f "$HOME/.mavenrc" ]; then
+  . "$HOME/.mavenrc"
+fi
