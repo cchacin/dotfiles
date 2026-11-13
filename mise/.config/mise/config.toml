@@ -97,6 +97,7 @@ zellij = "latest"
 llmfit = "latest"
 ollama = "latest"
 "npm:skills" = "latest"
+"pypi:graphifyy" = "latest"
 
 # --- Media, Image & Document Processing ---
 exiftool = "latest"
@@ -120,6 +121,24 @@ pi = "latest"
 oh-my-pi = { version = "latest", rename_exe = "omp" }
 "aqua:CrociDB/bulletty" = "latest"
 
+[tasks."graph:install"]
+description = "Install graphify platform skill"
+run = "graphify install --platform agents"
+
+[tasks."graph:generate"]
+description = "Generate knowledge graph and export to Obsidian vault"
+run = """
+#!/usr/bin/env bash
+set -e
+VAULT_PATH="${1:-$OBSIDIAN_VAULT_PATH}"
+graphify .
+if [ -n "$VAULT_PATH" ]; then
+    graphify export obsidian --dir "$VAULT_PATH"
+else
+    graphify export obsidian
+fi
+"""
+
 [tasks."skills:sync"]
 description = "Sync mattpocock skills for pi"
 run = "skills add mattpocock/skills --agent pi --global --all -y"
@@ -129,8 +148,8 @@ description = "Update all installed global agent skills"
 run = "skills update -g -y"
 
 [tasks."setup:agent"]
-description = "Bootstrap Herdr integration, skills, and default Pi settings"
-depends = ["skills:sync"]
+description = "Bootstrap Herdr integration, skills, graphify skill, and default Pi settings"
+depends = ["skills:sync", "graph:install"]
 run = """
 #!/usr/bin/env bash
 set -e
