@@ -121,6 +121,8 @@ pi = "latest"
 oh-my-pi = { version = "latest", rename_exe = "omp" }
 "aqua:CrociDB/bulletty" = "latest"
 mermaid-ascii = "latest"
+mitmproxy = "latest"
+rea = "latest"
 
 [tasks."graph:install"]
 description = "Install graphify platform skill"
