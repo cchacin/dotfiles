@@ -72,3 +72,8 @@ export HERDR_OMZ_THRESHOLD=10
 if [[ -f "$HOME/.zshrc.local" ]]; then
   source "$HOME/.zshrc.local"
 fi
+
+# Keep Rex's injected CLI directory at the front of PATH
+if [[ -n "${REX_BIN_DIR:-}" ]]; then
+  export PATH="$REX_BIN_DIR:$PATH"
+fi
