@@ -62,7 +62,7 @@ yq = "latest"
 "go:github.com/rakyll/hey" = "latest"
 atuin = "latest"
 bat = "latest"
-coreutils = "latest"
+coreutils = "0.12.0"
 duf = "latest"
 eza = "latest"
 fd = "latest"
@@ -123,6 +123,8 @@ oh-my-pi = { version = "latest", rename_exe = "omp" }
 mermaid-ascii = "latest"
 mitmproxy = "latest"
 rea = "latest"
+"aqua:mfontanini/presenterm" = "latest"
+d2 = "latest"
 
 [tasks."graph:install"]
 description = "Install graphify platform skill"
